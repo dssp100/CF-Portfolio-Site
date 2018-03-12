@@ -1,7 +1,9 @@
 .jumbotron {
   background-image: url(../img/StBarts.jpg);
   background-size: cover;
+  background-position: 0 20%;
 }
+
 .jumbotron p {
   color: white;
 }
