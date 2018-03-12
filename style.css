@@ -1,0 +1,28 @@
+nav {
+    margin-bottom: 0px !important;
+}
+.leftSide {
+    background-color: gray;
+    height: 694px;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.rightSide {
+    width: 65.5% !important;
+    background-color: lightgray;
+    height: 100%;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-color: #375a93;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+}

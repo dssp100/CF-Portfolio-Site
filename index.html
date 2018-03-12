@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <title>Hello World!</title>
+    <!-- Web Page Name -->
+    <title>DS Web Portfolio</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
     <!-- Custom styles for this template go here -->
+    <link rel="stylesheet" href="style.css">
 
+    <!-- Icon Library -->
+    <link rel="stylesheet" type="text/css"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -22,58 +26,227 @@
   </head>
 
   <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header nav-invered">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Daniel Springer</a>
+        </div><!-- /navbar-header nav-invered -->
+
+<!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+        </div><!-- /navbar-collapse -->
+      </div><!-- /container-fluid -->
+    </nav>
+
+<div class="row">
+
+<!-- Left side -->
+
+    <div class="col-sm-4 col-md-4 leftSide">
+        <div><img class="img" style="width: 300px; height: 300px" src="https://i.imgur.com/5Zb2pys.jpg" alt="Daniel Springer">
+            <div class="text-center">
+                <h3>Daniel Springer</h3>
+                <h4>Web Developer Student</h4>
+            </div>
+        </div>
+    </div> <!-- /.col-sm-4 col-md-4 leftSide -->
+
+    <!-- Header -->
+
+        <div class="col-sm-4 col-md-4 rightSide">
+
+    <!-- Home -->
+            <div id="Home"></div>
+              <div class"container">
+                  <!-- Main jumbotron for a primary marketing message or call to action -->
+                  <div class="jumbotron">
+                      <div class="container">
+                          <h1 class="text-center">Personal Web Portfolio</h1>
+                          <h3 class="text-center">Welcome to my personal Web Portfolio page, I hope you enjoy reading it!</h3>
+                      </div><!-- /container -->
+                  </div><!-- /jumbotron -->
+              </div><!-- /container -->
+
+    <!-- About -->
+
+          <div class="text-center" id="About">
+            <h2>About</h2>
+          </div>
+            <div class="text-center">
+              <!-- <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p> -->
+              <p><strong>Currently learning Web development at CarrerFoundry </strong></p>
+              <p>I enjoy bilding webpages and would love to get better at it.</p>
+              <p>Hopefully this course will bring me to the next level and help me find an fantastic side job</p>
+              <p>Hi there, my name is Daniel Springer and this is my personal web portfolio page. I created this page as part of an assignemnt from freeCodeCamp. In real live im an engineer, I take care of mechanical, electrical, air conditioning, or entrainetment and IT systems.</p>
+              <p>I usualy get up early in the morning before work and spend 3 or more hours of study on web development.</p>
+              <p>Programing realy fascinates me and im working everyday towards getting better at it so I can hopefully one day be good enough at it, to bring all my ideas to live.</p>
+              <p>One of my projects was to create a tribute page, I decided on creating a page about Elon Musk. He inspires me as I feel I have the same passions about electrics and programing and I like the way he thinks and aproaches the projects that he belives in.</p>
+              <p>The second project was a small To-do list app I did during a Udemy course called the <a href="https://www.udemy.com/the-web-developer-bootcamp/learn/v4/overview" target="_blank">Web developer boot camp</a></p>
+              <p>I Started working throught the freeCodeCamp course and and got as far as the JS section</p>
+              <p>I decided to sign up to the CarrerFoundry course in order to get some help when im stuck and need the small push to help me get going agian.s</p>
+            </div> <!-- /text-center -->
+      </div> <!-- /col-sm-8 col-md-8 rightSide -->
+
+    <!-- Projects -->
+
+      <div class="text-center" id="Projects">
+          <h2>Projects</h2>
+      </div>
+
       <div class="container">
-        <h1>Daniel Springer</h1>
-        <!-- <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p> -->
-        <p><strong>Learning Web development at CarrerFoundry </strong></p>
-        <p>I enjoy bilding webpages and would love to get better at it.</p>
-        <p>Hopefully this course will bring me to the next level and help me find an fantastic side job</p>
-      </div><!-- /container -->
-    </div><!-- /jumbotron -->
 
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Portfolio Concept</h2>
-          <p>Here are some of my projects I have already produced and also some ideas i would like to produce in the near future:</p>
-          <h3>My done projects:</h3>
-          <ul>
-            <li>Tribute page for Elon Musk.</li>
-            <br>
-            <p><a class="btn btn-default" href="https://codepen.io/dssp/full/yPRwYp/" target="_blank" role="button">View details &raquo;</a></p>
-            <li>Todo list. This project is not 100% finished, but will be soon.</li>
-            <br>
-            <p><a class="btn btn-default" href="https://codepen.io/dssp/full/gXqLRK/" target="_blank" role="button">View details &raquo;</a></p>
-          </ul>
-          <h3>My ideas for new projects:</h3>
-          <ul>
-            <li>Flash cards for programers: In this project I would like to build a site that will help me and other students keep tract of note and snippets so that they can repeat and retain the vast amout of info that needs to be remebered when learning programing.</li>
-            <li>Spreadsheed maker: This project helps creating interactive speasheets that allow a nice interface with the posibilibilty of media and reminder capabilities</li>
-            <li>A groupe Todo: This site is a place where groupes can work together and getting things done. There are already apps out there that do this but not the way I would like to see them</li>
-            <li>Maintenance tracker: Help keep track of all needed work and maintenace that involves equipment.</li>
-          </ul>
-          <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
-        </div><!-- /col -->
-        <div class="col-md-4">
-          <h2>Project Goals</h2>
-          <p>I would like to complete this course within 4 - 6 months depending on the complexity of the course material. I am ready to put in 2 to 5 hours a day depending on what is going on in my live at the moments since i have a full time job. I any case i'm commited to give my best to succed and excell.  </p>
-          <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
-       </div><!-- /col -->
-        <div class="col-md-4">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="col-sm-4 col-md-4">
+            <h2>Portfolio Concept</h2>
+            <p>Here are some of my projects I have already produced and also some ideas i would like to produce in the near future:</p>
+            <h3>My done projects:</h3>
+            <ul>
+              <li>Tribute page for Elon Musk.</li>
+              <li>Todo list. This project is not 100% finished, but will be soon.</li>
+            </ul>
+            <h3>My ideas for new projects:</h3>
+            <ul>
+              <li>Flash cards for programers: In this project I would like to build a site that will help me and other students keep tract of note and snippets so that they can repeat and retain the vast amout of info that needs to be remebered when learning programing.</li>
+              <li>Spreadsheed maker: This project helps creating interactive speasheets that allow a nice interface with the posibilibilty of media and reminder capabilities</li>
+              <li>A groupe Todo: This site is a place where groupes can work together and getting things done. There are already apps out there that do this but not the way I would like to see them</li>
+              <li>Maintenance tracker: Help keep track of all needed work and maintenace that involves equipment.</li>
+            </ul>
+          </div><!-- /col-sm-4 col-md-4 -->
+
+          <div class="col-sm-4 col-md-4">
+            <h2>Project Goals</h2>
+            <p>I would like to complete this course within 4 - 6 months depending on the complexity of the course material. I am ready to put in 2 to 5 hours a day depending on what is going on in my live at the moments since i have a full time job. I any case i'm commited to give my best to succed and excell.  </p>
+         </div><!-- /col-sm-4 col-md-4 -->
+
+        <div class="col-sm-4 col-md-4">
           <h2>Course Goals</h2>
           <p>My profesional goals are to learn to code web pages and have fun being creative. I would like to be able to bring my ideas to live. If I get a side job along the way to help me improve my knowledge and earn some extra money it would be awesome. If I can publish my ideas and have a good time doing it and make some money with it I would be the happiest guy out there! :)</p>
-          <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
         </div><!-- /col -->
+
       </div><!-- /row -->
 
-      <hr>
+    </div><!-- /container -->
+
+    <!-- /Project preview -->
+        <div class="row">
+
+         <div class="col-sm-6 col-md-4 text-center">
+          <div class="thumbnail">
+            <img style="width: 100px; height: 100px" src="https://i.imgur.com/WsJCab3.png" alt="Tribute Page">
+              <div class="caption">
+                <h3>Tribute Page</h3>
+                    <p>I create this page to tribute Elon Musk</p>
+                    <p><a href="https://codepen.io/dssp/full/yPRwYp/" target="_blank" class="btn btn-primary" role="button">Show</a> <a href="#"></a></p>
+                </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 text-center">
+          <div class="thumbnail">
+            <img style="width: 100px; height: 100px" src="https://i.imgur.com/UGNuOEX.png" alt="To-do List">
+              <div class="caption">
+                <h3>To-do List</h3>
+                    <p>I created this as part of a course I did on Udemy</p>
+                    <p><a href="https://codepen.io/dssp/full/gXqLRK/" target="_blank" class="btn btn-primary" role="button">Show</a> <a href="#"></a></p>
+                </div>
+          </div>
+        </div>
+
+         <div class="col-sm-6 col-md-4 text-center">
+          <div class="thumbnail">
+            <img style="width: 100px; height: 100px" src="https://i.imgur.com/hUDRdT5.gif" alt="Sample Image">
+              <div class="caption">
+                <h3>Under Construction</h3>
+                    <p>I will add when the project has been completed</p>
+                    <p><a href="https://codepen.io/dssp/full/yPRwYp/" target="_blank" class="btn btn-primary" role="button">Show</a> <a href="#"></a></p>
+                </div>
+          </div>
+        </div>
+
+         <div class="col-sm-6 col-md-4 text-center">
+          <div class="thumbnail">
+            <img style="width: 100px; height: 100px" src="https://i.imgur.com/hUDRdT5.gif" alt="Sample Image">
+              <div class="caption">
+                <h3>Under Construction</h3>
+                    <p>I will add when the project has been completed</p>
+                    <p><a href="https://codepen.io/dssp/full/yPRwYp/" target="_blank" class="btn btn-primary" role="button">Show</a> <a href="#"></a></p>
+                </div>
+          </div>
+        </div>
+
+         <div class="col-sm-6 col-md-4 text-center">
+          <div class="thumbnail">
+            <img style="width: 100px; height: 100px" src="https://i.imgur.com/hUDRdT5.gif" alt="Sample Image">
+              <div class="caption">
+                <h3>Under Construction</h3>
+                    <p>I will add when the project has been completed</p>
+                    <p><a href="https://codepen.io/dssp/full/yPRwYp/" target="_blank" class="btn btn-primary" role="button">Show</a> <a href="#"></a></p>
+                </div>
+          </div>
+        </div>
+
+         <div class="col-sm-6 col-md-4 text-center">
+          <div class="thumbnail">
+            <img style="width: 100px; height: 100px" src="https://i.imgur.com/hUDRdT5.gif" alt="Sample Image">
+              <div class="caption">
+                <h3>Under Construction</h3>
+                    <p>I will add when the project has been completed</p>
+                    <p><a href="https://codepen.io/dssp/full/yPRwYp/" target="_blank" class="btn btn-primary" role="button">Show</a> <a href="#"></a></p>
+                </div>
+          </div>
+        </div>
+
+    </div> <!-- /.row -->
+
+    <!-- Contacts -->
+    <div class="text-center" id="Contact"><h2>Contact</h2></div>
+       <div class="container-fluid text-center">
+            <span>
+              <a href="mailto:dssp@freenet.de Subject=Hello%20from%20Web Portfolio" target="_blank" target="_top">
+              <i class="fa fa-envelope-o fa-5x" aria-hidden="true"></i>
+              </a>
+            </span>
+            <span>
+              <a href="https://twitter.com/dssp100" target="_blank" target="_top">
+              <i class="fa fa-twitter fa-5x" aria-hidden="true"></i>
+              </a>
+            </span>
+            <span>
+              <a href="https://github.com/dssp100" target="_blank" target="_top">
+              <i class="fa fa-github fa-5x" aria-hidden="true"></i>
+              </a>
+            </span>
+           <span>
+              <a href="https://www.linkedin.com/in/daniel-springer-22179b1b/" target="_blank" target="_top">
+              <i class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i>
+              </a>
+            </span>
+        </div>
 
 
-    </div> <!-- /container -->
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+
 
 
     <!-- ============================= -->
