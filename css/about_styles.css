@@ -1,0 +1,30 @@
+/* * { border: 1px solid red; } */
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.header {
+  text-align: center;
+}
+
+.column {
+  width: 33.33333333333333%;
+  display: inline-block;
+  padding-right: 20px;
+  float: left;
+}
+
+.image img {
+  width: 100%;
+}
+
+.main-text {
+  padding-top: 40px;
+  clear: both;
+}
