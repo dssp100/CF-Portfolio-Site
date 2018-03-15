@@ -37,6 +37,7 @@ body {
 
 .nav ul.left {
   float: left;
+  padding-left: 20px;
 }
 
 .nav ul.right {
