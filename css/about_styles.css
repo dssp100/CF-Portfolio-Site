@@ -1,14 +1,59 @@
-/* * { border: 1px solid red; } */
+/* { border: 1px solid red; } */
 
+/*Universal Selector*/
 * {
   box-sizing: border-box;
 }
 
+/*Body*/
 body {
   background-color: #fffeea;
   color: #34495e;
+  padding-top: 90px;
 }
 
+/*Navigation bar*/
+.nav {
+  background-color: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 20px 10px 20px;
+}
+
+.nav ul li {
+  display: inline-block;
+
+}
+
+.nav ul li a {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  -webkit-transition: color 600ms;
+  -moz-transition: color 600ms;
+  -o-transition: color 600ms;
+  transition: color 600ms;
+}
+
+.nav ul.left {
+  float: left;
+
+}
+
+.nav ul.right {
+  float: right;
+  padding-right: 40px;
+  word-spacing: 30px;
+
+}
+
+.nav a:hover {
+  color: rgba(249, 199, 129, 1.000);
+  text-decoration: none;
+}
+
+/*Header*/
 .header {
   text-align: center;
 }

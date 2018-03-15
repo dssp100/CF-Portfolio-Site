@@ -14,7 +14,7 @@ body{
   color: white;
 }
 
-.link .about, .contact {
+.about, .contact {
   color: yellow;
   display: block;
 }
