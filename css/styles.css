@@ -1,3 +1,7 @@
+body{
+    font-family: 'Indie Flower', cursive;
+}
+
 /* jumbotron img styling */
 .jumbotron {
   background-image: url(../img/StBarts.jpg);
@@ -8,4 +12,13 @@
 /* jumbotron txt styling */
 .jumbotron p {
   color: white;
+}
+
+.link .about, .contact {
+  color: yellow;
+  display: block;
+}
+
+.row {
+  color: rgba(71, 78, 93, 1.000);
 }

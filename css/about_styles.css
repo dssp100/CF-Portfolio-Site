@@ -4,13 +4,18 @@
   box-sizing: border-box;
 }
 
-.container {
-  margin: 0 auto;
-  width: 80%;
+body {
+  background-color: #fffeea;
+  color: #34495e;
 }
 
 .header {
   text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
 }
 
 .column {
@@ -27,4 +32,37 @@
 .main-text {
   padding-top: 40px;
   clear: both;
+}
+
+.styles h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#skill-list {
+  margin-left: 50px;
+}
+.skills {
+  background-color: #5AD4C2;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/*Typography*/
+
+h1,
+h2,
+h3 {
+  font-family: "Futura", "Helvetica", "Arial", "sans-serif";
+}
+
+p,
+li {
+  font-family: "Georgia","Lora", "serif";
+}
+.intro p {
+  -webkit-margin-before: 0;
+  font-family: Futura, Helvetica, Arial, sans-serif;
+  font-size: 3em;
+  font-weight: 100;
 }
