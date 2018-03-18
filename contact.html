@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Contact</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/contact_styles.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
   </head>
-  <body>
-    <div class="nav">
+  <body class="contact_page_body">
+
+    <!-- Start of nav -->
+    <div class="nav contact_page_nav">
       <ul class="left">
         <li><a href="index.html">Home</a></li>
       </ul>
@@ -23,27 +26,38 @@
       </ul>
     </div><!-- end of nav -->
 
-    <div class="jumbotron">
-      <div class="container">
-        <div class="header">
+    <!-- Start of Jumbotron -->
+    <div class="jumbotron contact_page_jumbotron" >
+      <div class="container contact_page_container">
+        <div class="header contact_page_header">
           <h1>My contact details</h1>
           <p>Feel free to send me a email or call me if you want.</p>
-        </div><!-- /contact -->
-      </div><!-- /container -->
-    </div><!-- /jumbotron -->
+        </div><!-- end of container -->
+      </div><!-- end of header-container -->
+    </div><!-- end of jumbotron -->
 
-  <div class="main">
-    <div class="contact-container">
-      <ul>
-        <li>Email: dssp100@gmail.com</li>
-        <li>Phone Nr: 0033 061234567</li>
-        <li>Home Address: Somewhere in Monte Carlo</li>
-      </ul>
-      <div class="social">
-        <p><a href="#">Facebook</a></p>
-        <p><a href="#">Twitter</a></p>
-      </div><!-- /social-->
-    </div><!-- /contact-container -->
-  </div><!-- /main -->
+    <!-- Start of the main content area -->
+    <div class="contact_page_main" >
+      <div class="contact_page_container">
+        <ul>
+          <li> <span class="glyphicon glyphicon-envelope"></span> Email: dssp100@gmail.com</li>
+          <li> <span class="glyphicon glyphicon-phone-alt"></span> Phone Nr: 0033 061234567</li>
+          <li> <span class="glyphicon glyphicon-home"></span> Home Address: Somewhere in Monte Carlo</li>
+        </ul>
+        <div class="social">
+          <p><a href="#">Facebook</a></p>
+          <p><a href="#">Twitter</a></p>
+        </div><!-- /social-->
+      </div><!-- /contact-container -->
+    </div><!-- /main -->
+
+  <!-- ============================= -->
+    <!-- All your JavaScript comes now -->
+    <!-- ============================= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap core JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Can place script tags with JavaScript files here -->
+
   </body>
 </html>

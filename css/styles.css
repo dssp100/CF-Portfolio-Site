@@ -1,16 +1,20 @@
+/**********************/
+/**** Index page ****/
+/**********************/
+
 body{
     font-family: 'Indie Flower', cursive;
 }
 
 /* jumbotron img styling */
-.jumbotron {
+.index_page_jumbotron {
   background-image: url(../img/StBarts.jpg);
   background-size: cover;
   background-position: 0 20%;
 }
 
 /* jumbotron txt styling */
-.jumbotron p {
+.index_page_jumbotron p {
   color: white;
 }
 
@@ -21,4 +25,149 @@ body{
 
 .row {
   color: rgba(71, 78, 93, 1.000);
+}
+
+
+/**********************/
+/**** Contact page ****/
+/**********************/
+
+* {
+  box-sizing: border-box;
+}
+
+.contact_page_body {
+  text-align: center;
+  /* outline: 20px dotted white;
+  outline-offset: -22px; */
+  padding-top: 98px;
+}
+
+/*Navigation bar*/
+.contact_page_nav,
+.faq_page_nav {
+  background-color: rgba(241, 241, 241, 1.000);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 20px 10px 20px;
+  font-weight: 900;
+  font-size: 20px
+}
+
+.contact_page_nav ul li,
+.faq_page_nav ul li {
+  display: inline-block;
+}
+
+.contact_page_nav ul li a,
+.faq_page_nav ul li a {
+  color: rgba(71, 78, 93, 1.000);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  -webkit-transition: color 600ms;
+  -moz-transition: color 600ms;
+  -o-transition: color 600ms;
+  transition: color 600ms;
+}
+
+.contact_page_nav, ul.left,
+.faq_page_nav, ul.left  {
+  float: left;
+  padding-left: 20px;
+}
+
+.contact_page_nav, ul.right,
+.faq_page_nav, ul.right {
+  float: right;
+  padding-right: 40px;
+  word-spacing: 30px;
+}
+
+.contact_page_nav a:hover,
+.faq_page_nav a:hover {
+  color: rgba(76, 113, 191, 1.000);
+  text-decoration: none;
+}
+
+
+/* jumbotron img styling */
+.contact_page_jumbotron,
+.faq_page_jumbotron {
+  text-align: center;
+  margin-bottom: 0px;
+  background-color: rgba(241, 241, 241, 1.000);
+  color: rgba(71, 78, 93, 1.000);
+  border: 20px dotted white;
+}
+.contact_page_header h1, .faq_page_header h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 5px
+}
+
+.contact_page_container h1 p, .faq_page_container h1 p {
+  text-align: center;
+}
+
+.contact_page_main, .faq_page_main {
+  background-image: url(../img/Mc.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: auto;
+  height: 800px;
+  color: white;
+  font-size: 1.2em;
+}
+
+.glyphicon:hover {
+  text-decoration: underline;
+
+}
+
+
+.contact_page_container .social p {
+  display: inline-block;
+  border: 2px solid white;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 5px;
+}
+
+.contact_page_container, ul {
+  padding-top: 20px;
+  list-style-type: none;
+  padding-left: 0px;
+}
+.social {
+  display: inline;
+}
+.social a {
+  color: white;
+}
+/* For bigger screen sizes */
+
+@media screen and (min-width: 668px){
+  .contact_page_main {
+    padding-top: 50px;
+    font-size: 2.5em;
+
+  }
+  .contact_page_container, .social p {
+    margin: 40px;
+    padding: 15px;
+}
+
+}
+/**********************/
+/**** Faq page ****/
+/**********************/
+
+.panel-title {
+  color: rgba(42, 134, 209, 1.000);
+}
+.panel-body {
+  font-family: 'Patrick Hand SC', cursive;
+  color: rgba(245, 163, 0, 1.000);
+  letter-spacing: 0.2em;
 }
