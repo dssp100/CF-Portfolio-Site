@@ -6,6 +6,82 @@ body{
     font-family: 'Indie Flower', cursive;
 }
 
+/*Navigation bar*/
+.index_page_nav,
+.contact_page_nav,
+.faq_page_nav
+ {
+  background-color: rgba(241, 241, 241, 1.000);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 20px 10px 20px;
+  font-weight: 900;
+  font-size: 20px;
+  z-index: 2;
+}
+
+.index_page_nav ul li,
+.contact_page_nav ul li,
+.faq_page_nav ul li {
+  display: inline-block;
+}
+
+.index_page_nav ul li a,
+.contact_page_nav ul li a,
+.faq_page_nav ul li a {
+  color: rgba(71, 78, 93, 1.000);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  -webkit-transition: color 600ms;
+  -moz-transition: color 600ms;
+  -o-transition: color 600ms;
+  transition: color 600ms;
+}
+.index_page_nav, ul.left,
+.contact_page_nav, ul.left,
+.faq_page_nav, ul.left  {
+  float: left;
+  padding-left: 20px;
+}
+
+.index_page_nav, ul.right,
+.contact_page_nav, ul.right,
+.faq_page_nav, ul.right {
+  float: right;
+  padding-right: 40px;
+  word-spacing: 30px;
+}
+
+.index_page_nav a:hover,
+.contact_page_nav a:hover,
+.faq_page_nav a:hover {
+  color: rgba(76, 113, 191, 1.000);
+  text-decoration: none;
+}
+
+
+/* Carousel styling */
+#carousel-example-generic {
+  margin-top: 98px;
+  z-index: 1;
+}
+
+.img0 {
+  font-size: 30px;
+}
+.img2, .img4, .img5 {
+  font-size: 30px;
+}
+.img3 {
+  color: ;
+  font-size: 30px;
+}
+.carousel {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
 /* jumbotron img styling */
 .index_page_jumbotron {
   background-image: url(../img/StBarts.jpg);
@@ -43,52 +119,6 @@ body{
   padding-top: 98px;
 }
 
-/*Navigation bar*/
-.contact_page_nav,
-.faq_page_nav {
-  background-color: rgba(241, 241, 241, 1.000);
-  position: fixed;
-  width: 100%;
-  top: 0;
-  padding: 20px 10px 20px;
-  font-weight: 900;
-  font-size: 20px
-}
-
-.contact_page_nav ul li,
-.faq_page_nav ul li {
-  display: inline-block;
-}
-
-.contact_page_nav ul li a,
-.faq_page_nav ul li a {
-  color: rgba(71, 78, 93, 1.000);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  -webkit-transition: color 600ms;
-  -moz-transition: color 600ms;
-  -o-transition: color 600ms;
-  transition: color 600ms;
-}
-
-.contact_page_nav, ul.left,
-.faq_page_nav, ul.left  {
-  float: left;
-  padding-left: 20px;
-}
-
-.contact_page_nav, ul.right,
-.faq_page_nav, ul.right {
-  float: right;
-  padding-right: 40px;
-  word-spacing: 30px;
-}
-
-.contact_page_nav a:hover,
-.faq_page_nav a:hover {
-  color: rgba(76, 113, 191, 1.000);
-  text-decoration: none;
-}
 
 
 /* jumbotron img styling */
