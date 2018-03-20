@@ -1,70 +1,32 @@
 /**********************/
-/**** Index page ****/
+/****** All pages *****/
 /**********************/
+* {
+  box-sizing: border-box;
+}
 
-body{
-    font-family: 'Indie Flower', cursive;
+body {
+  font-family: 'Indie Flower', cursive;
 }
 
 /*Navigation bar*/
-.index_page_nav,
-.contact_page_nav,
-.faq_page_nav
- {
-  background-color: rgba(241, 241, 241, 1.000);
-  position: fixed;
-  width: 100%;
-  top: 0;
-  padding: 20px 10px 20px;
-  font-weight: 900;
-  font-size: 20px;
-  z-index: 2;
+.navbar {
+  margin-bottom: 0px;
+  z-index: 1;
+}
+.nav li a {
+  font-size: 32px;
 }
 
-.index_page_nav ul li,
-.contact_page_nav ul li,
-.faq_page_nav ul li {
-  display: inline-block;
-}
 
-.index_page_nav ul li a,
-.contact_page_nav ul li a,
-.faq_page_nav ul li a {
-  color: rgba(71, 78, 93, 1.000);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  -webkit-transition: color 600ms;
-  -moz-transition: color 600ms;
-  -o-transition: color 600ms;
-  transition: color 600ms;
-}
-.index_page_nav, ul.left,
-.contact_page_nav, ul.left,
-.faq_page_nav, ul.left  {
-  float: left;
-  padding-left: 20px;
-}
-
-.index_page_nav, ul.right,
-.contact_page_nav, ul.right,
-.faq_page_nav, ul.right {
-  float: right;
-  padding-right: 40px;
-  word-spacing: 30px;
-}
-
-.index_page_nav a:hover,
-.contact_page_nav a:hover,
-.faq_page_nav a:hover {
-  color: rgba(76, 113, 191, 1.000);
-  text-decoration: none;
-}
-
+/**********************/
+/***** Index page *****/
+/**********************/
 
 /* Carousel styling */
 #carousel-example-generic {
-  margin-top: 98px;
-  z-index: 1;
+  margin-top: 20px;
+  z-index: 0;
 }
 
 .carousel-caption {
@@ -75,26 +37,12 @@ body{
   margin-left: -15px;
   margin-right: -15px;
 }
+/**********************/
+/***** About page *****/
+/**********************/
 
-/* jumbotron img styling */
-.index_page_jumbotron {
-  background-image: url(../img/StBarts.jpg);
-  background-size: cover;
-  background-position: 0 20%;
-}
-
-/* jumbotron txt styling */
-.index_page_jumbotron p {
-  color: white;
-}
-
-.about, .contact {
-  color: yellow;
-  display: block;
-}
-
-.row {
-  color: rgba(71, 78, 93, 1.000);
+.page-header {
+  margin-top: 6em;
 }
 
 
@@ -102,18 +50,12 @@ body{
 /**** Contact page ****/
 /**********************/
 
-* {
-  box-sizing: border-box;
-}
-
-.contact_page_body {
+.contact_page_jumbotron {
   text-align: center;
   /* outline: 20px dotted white;
   outline-offset: -22px; */
-  padding-top: 98px;
+  /* padding-top: 98px; */
 }
-
-
 
 /* jumbotron img styling */
 .contact_page_jumbotron,
@@ -123,15 +65,13 @@ body{
   background-color: rgba(241, 241, 241, 1.000);
   color: rgba(71, 78, 93, 1.000);
   border: 20px dotted white;
+  margin-top: 70px;
 }
-.contact_page_header h1, .faq_page_header h1 {
+.contact_page_header h1,
+.faq_page_header h1 {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 5px
-}
-
-.contact_page_container h1 p, .faq_page_container h1 p {
-  text-align: center;
 }
 
 .contact_page_main, .faq_page_main {
@@ -142,13 +82,13 @@ body{
   height: 800px;
   color: white;
   font-size: 1.2em;
+  text-align: center;
 }
 
 .glyphicon:hover {
   text-decoration: underline;
 
 }
-
 
 .contact_page_container .social p {
   display: inline-block;
@@ -163,30 +103,35 @@ body{
   list-style-type: none;
   padding-left: 0px;
 }
+
 .social {
   display: inline;
 }
+
 .social a {
   color: white;
 }
-/* For bigger screen sizes */
 
+/* For bigger screen sizes */
 @media screen and (min-width: 668px){
   .contact_page_main {
     padding-top: 50px;
     font-size: 2.5em;
-
   }
+
   .contact_page_container, .social p {
     margin: 40px;
     padding: 15px;
+  }
 }
 
-}
 /**********************/
 /**** Faq page ****/
 /**********************/
 
+.faq_content_container {
+  text-align: center;
+}
 .panel-title {
   color: rgba(42, 134, 209, 1.000);
 }
