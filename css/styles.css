@@ -10,8 +10,10 @@ body {
   position: relative;
 }
 
-/* <!-- NavBar Section -->
-<!-- ****************************************************** --> */
+
+/* <!-- ****************************************************** --> */
+/* <!-- NavBar Section --> */
+
 .navbar {
   margin-bottom: 0px;
   z-index: 1;
@@ -20,10 +22,11 @@ body {
   font-size: 32px;
 }
 
+/* <!-- ****************************************************** --> */
 /* <!-- Home Section -->
-<!-- ****************************************************** --> */
 
 /* Carousel styling */
+
 #carousel-example-generic {
   margin-top: 20px;
   z-index: 0;
@@ -41,31 +44,40 @@ body {
   margin-right: -15px;
 }
 
-
-
-/* <!-- About Section -->
-<!-- ****************************************************** --> */
+/* <!-- ****************************************************** --> */
+/* <!-- About Section --> */
 
 .about-section h1 {
-  margin-top: 2em;
+  margin-top: 2.2em;
 }
 
-/* <!-- Work Section -->
-<!-- ****************************************************** --> */
+#skill-list ul {
+  font-size: 14px;
+  padding-top: 20px;
+  list-style-type: none;
+  padding-left: 0px;
+  text-align: center;
+  padding: 0px;
+}
+
+#skill-list li {
+  font-size: 14px;
+  list-style-type: none;
+
+}
+
+/* <!-- ****************************************************** --> */
+/* <!-- Work Section --> */
 
 .work-section h2 {
   margin-top: 2.5em;
 }
 
-/* <!-- Contact Section -->
-<!-- ****************************************************** --> */
+/* <!-- ****************************************************** --> */
+/* <!-- Contact Section --> */
 
 #contact {
-  padding-top: 50px;
-
-  /* outline: 20px dotted white;
-  outline-offset: -22px; */
-
+  padding-top: 3.5em;
 }
 
 /* jumbotron img styling */
@@ -87,7 +99,20 @@ body {
 
 .contact_page_main,
 .faq_page_main {
+  /* Start paralax styling */
   background-image: url(../img/Mc.jpg);
+  /*Add a background image*/
+  background-attachment: fixed;
+  /*Give the background a fixed position does it not scroll when you scroll*/
+  background-size: cover;
+  /*Have the background cover the entire div section*/
+  color: white;
+  /*Change the color of the text on top so it is readable and adjust the padding as needed.*/
+  padding:100px;
+  padding-top: 50px;
+  height: 400px;
+  /* End paralax styling */
+
   background-repeat: no-repeat;
   background-size: 100%;
   width: auto;
@@ -102,7 +127,8 @@ body {
 
 }
 
-.contact_page_container .social p {
+.contact_page_container .social p,
+.faq_page_container .social p {
   display: inline-block;
   border: 2px solid white;
   border-radius: 5px;
@@ -110,10 +136,11 @@ body {
   padding: 5px;
 }
 
-.contact_page_container, ul {
-  /* padding-top: 20px; */
+.contact_page_container ul {
+  padding-top: 20px;
   list-style-type: none;
   padding-left: 0px;
+  font-size: 1.5em;
 }
 
 .social {
@@ -124,33 +151,44 @@ body {
   color: white;
 }
 
-/* For bigger screen sizes */
-/* @media screen and (min-width: 668px){
-  .contact_page_main {
-    padding-top: 50px;
-    font-size: 2.5em;
-  } */
+/* <!-- ****************************************************** --> */
+/* <!-- faq Section --> */
 
-  /* .contact_page_container, .social p {
-    margin: 40px;
-    padding: 15px;
-  }
-}*/
-
-/* <!-- faq Section -->
-<!-- ****************************************************** --> */
 #faq{
-  padding-top: 160px;
+  padding-top: 3.5em;
 }
+
 .faq_content_container {
   text-align: center;
   margin-top: 70px;
 }
+
 .panel-title {
-  color: rgba(42, 134, 209, 1.000);
+  color: rgba(76, 113, 191, 1.000);
 }
+
 .panel-body {
   font-family: 'Patrick Hand SC', cursive;
-  color: rgba(245, 163, 0, 1.000);
+  color: rgba(65, 201, 64, 1.000);
   letter-spacing: 0.2em;
+}
+
+/* For bigger screen sizes */
+@media screen and (min-width: 668px){
+  .contact_page_container, ul {
+    font-size: 1.6em;
+    }
+
+  .contact_page_container, .social p {
+    margin: 40px;
+    padding: 15px;
+    }
+
+    #contact {
+    padding-top: 3.6em;
+    }
+
+    #faq{
+    padding-top: 3.6em;
+    }
 }

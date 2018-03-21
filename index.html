@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
     <title>Web Portfolio Daniel Springer</title>
 
     <!-- Bootstrap core CSS -->
@@ -26,8 +29,9 @@
 
   <body data-spy="scroll" data-target=".navbar">
 
-     <!-- NavBar Section -->
+
 <!-- ****************************************************** -->
+<!-- NavBar Section -->
 
     <!-- Start of NavBar -->
 		<nav class="navbar navbar-default navbar-fixed-top">
@@ -67,8 +71,8 @@
 
     </nav><!-- End of NavBar -->
 
-     <!-- Home Section -->
 <!-- ****************************************************** -->
+<!-- Home Section -->
 
     <!-- Start of Home Section -->
     <div class="container-fluid" id="home">
@@ -156,11 +160,14 @@
       </div><!-- End of id="overview" -->
     </div><!-- End of Home Section -->
 
-     <!-- About Section -->
 <!-- ****************************************************** -->
+<!-- About Section -->
 
     <!-- Start of About Section-->
-    <div class="container about-section" id="about">
+    <div id="about"></div>
+
+    <!-- Start of container about-section-->
+    <div class="container about-section">
 
       <!-- Start of upper-section -->
       <div class="upper-section">
@@ -186,7 +193,7 @@
 
           <!-- Start of My Skills -->
           <div class="col-sm-12 col-md-4 text-center">
-            <h3>My Skills</h3>
+            <h2>My Skills</h2>
             <ul id="skill-list">
               <li>Electrical Engineering</li>
               <li>Mechanical Engineering</li>
@@ -209,29 +216,32 @@
 
       </div><!-- End of upper-section -->
 
-      <!-- Start of lower-section-->
+      <!-- Start of Lower Section-->
       <div class="lower-section">
 
         <div class="main-text">
-          <h3>More About Me</h3>
+          <h2>More About Me</h2>
           <p>
             Long time ago when I started my professional carrier I did an apprenticeship as a electrical engineer. After some years of working and studying I completed my degree. I then spend 9 months in the German Army as this was still compulsory at the time. I then worked for 2 years as a electrical senior programing automated home installations and other kind of industrial systems. I decided then I needed a challenge and purchased a flight ticket to Mallorca in Spain to find work on the Yachts a I always had a great passion for it. I became self-employed und worked for all kind of companies that had to do with electrics or mechanics on Yachts. One day I got an offer to work as permanent crewmember on a yacht and took this opportunity. I enjoyed it so much that I decided to work towards a certification that would allow me become a chief engineer on the bigger Yachts. After 12 years of working studying and working I achieve the highest license you can obtain as chief engineer on Yachts. I always had the passion the passion to program things and that sense of achievement to bring something alive or get some to work has become stronger and I had the decided I wanted to build apple apps. I enjoyed it, but felt web development was more my thing. I had then started several courses including Free code camp, Udemy courses, Codecademy. I stumbled across the Carrerfoundry and liked the support option that they provide with an designated Tutor / Mentor. Now I’m here and hope this course will bring me to the next level.
           </p>
         </div><!-- End of main-text -->
 
-      </div><!-- End of id lower Section-->
+      </div><!-- End of Lower Section-->
 
-    </div><!-- End of About Section-->
+    </div> <!-- End of container about-section--><!-- End of About Section-->
 
-      </div>
-
-     <!-- Work Section -->
 <!-- ****************************************************** -->
+<!-- Work Section -->
 
     <!-- Start of Work Section -->
-    <div class="container work-section" id="work">
+    <div id="work"></div>
+
+    <!-- Start of container work-section-->
+    <div class="container work-section">
 
       <h2 class="display-4 text-center py-5 page-header">My Work</h2>
+
+      <h3>Work 1</h3>
 
       <div class="row" id="work">
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
@@ -246,6 +256,9 @@
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
           <img src="img/underConstruction.png" class="img-responsive"alt="Under Construction">
         </div>
+
+        <h3>Work 2</h3>
+
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
           <img src="img/underConstruction.png" class="img-responsive"alt="Under Construction">
         </div>
@@ -260,49 +273,53 @@
         </div>
       </div><!-- End of row -->
 
-    </div><!-- End of Work Section -->
+    </div><!-- Start of container work-section--><!-- End of Work Section -->
 
-     <!-- Contact Section -->
 <!-- ****************************************************** -->
+<!-- Contact Section -->
 
     <!-- Start of Contact Section -->
-      <div id="contact"></div>
-      <!-- Start of jumbotron -->
-      <div class="jumbotron contact_page_jumbotron" >
-        <div class="container contact_page_container">
-          <div class="header contact_page_header">
-            <h1>My contact details</h1>
-            <p>Feel free to send me a email or call me if you want.</p>
-          </div><!-- End of header -->
-        </div><!-- End of contact_page_container -->
-      </div><!-- End of jumbotron -->
+    <div id="contact"></div>
 
-      <!-- Start of the main content area -->
-      <div class="contact_page_main" >
-
-        <div class="contact_page_container">
-
-          <ul>
-            <li> <span class="glyphicon glyphicon-envelope"></span> Email: dssp100@gmail.com</li>
-            <li> <span class="glyphicon glyphicon-phone-alt"></span> Phone Nr: 0033 061234567</li>
-            <li> <span class="glyphicon glyphicon-home"></span> Home Address: Somewhere in Monte Carlo</li>
-          </ul>
-
-          <div class="social">
-            <p><a href="#">Facebook</a></p>
-            <p><a href="#">Twitter</a></p>
-          </div><!-- End of social-->
-
-        </div><!-- End contact-container -->
-
+    <!-- Start of jumbotron -->
+    <div class="jumbotron contact_page_jumbotron" >
+      <div class="container contact_page_container">
+        <div class="header contact_page_header">
+          <h1>My contact details</h1>
+          <p>Feel free to send me a email or call me if you want.</p>
+        </div><!-- End of header -->
       </div><!-- End of contact_page_container -->
+    </div><!-- End of jumbotron -->
 
-    <!-- faq Section -->
+    <!-- Start of the main content area -->
+    <div class="contact_page_main" >
+
+      <div class="contact_page_container">
+
+        <ul>
+          <li> <span class="glyphicon glyphicon-envelope"></span> Email: dssp100@gmail.com</li>
+          <li> <span class="glyphicon glyphicon-phone-alt"></span> Phone Nr: 0033 061234567</li>
+          <li> <span class="glyphicon glyphicon-home"></span> Home Address: Somewhere in Monte Carlo</li>
+        </ul>
+
+        <div class="social">
+          <p><a href="#">Facebook</a></p>
+          <p><a href="#">Twitter</a></p>
+        </div><!-- End of social-->
+
+      </div><!-- End contact-container -->
+
+    </div><!-- End of contact_page_container -->
+
 <!-- ****************************************************** -->
+<!-- faq Section -->
+
+    <!-- Start of faq Section -->
+    <div id="faq"></div>
 
     <!-- Start of Jumbotron -->
-    <div class="jumbotron faq_page_jumbotron" id="faq">
-      <div class="container faq_page_container">
+    <div class="jumbotron faq_page_jumbotron">
+      <div class="container">
         <div class="header faq_page_header">
           <h1>FAQ's</h1>
           <p>Here you find some common asked questions.</p>
@@ -432,35 +449,37 @@
 
       </div><!-- End of Accordion  -->
 
-    <!-- Start of Footer -->
-    <div>
-      <h3>Let me know if you have more questions</h3>
-      <br>
-      <div class="container-fluid text-center">
-        <span>
-          <a href="mailto:dssp@freenet.de Subject=Hello" target="_top">
-          <i class="fa fa-envelope-o fa-5x" aria-hidden="true"></i>
-          </a>
-        </span>
-        <span>
-          <a href="https://twitter.com/dssp100" target="_top">
-          <i class="fa fa-twitter fa-5x" aria-hidden="true"></i>
-          </a>
-        </span>
-        <span>
-          <a href="https://github.com/dssp100" target="_top">
-          <i class="fa fa-github fa-5x" aria-hidden="true"></i>
-          </a>
-        </span>
-       <span>
-          <a href="https://github.com/dssp100" target="_top">
-          <i class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i>
-          </a>
-        </span>
-    </div>
-    </div><!-- End of Footer -->
+      <!-- Start of Footer -->
+      <div class="footer">
+        <h3>Let me know if you have more questions</h3>
+        <br>
+        <div class="container-fluid text-center">
+          <span>
+            <a href="mailto:dssp@freenet.de Subject=Hello" target="_top">
+            <i class="fa fa-envelope-o fa-5x" aria-hidden="true"></i>
+            </a>
+          </span>
+          <span>
+            <a href="https://twitter.com/dssp100" target="_top">
+            <i class="fa fa-twitter fa-5x" aria-hidden="true"></i>
+            </a>
+          </span>
+          <span>
+            <a href="https://github.com/dssp100" target="_top">
+            <i class="fa fa-github fa-5x" aria-hidden="true"></i>
+            </a>
+          </span>
+         <span>
+            <a href="https://github.com/dssp100" target="_top">
+            <i class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i>
+            </a>
+          </span>
+        </div><!-- End of container-fluid text-center"> -->
+      </div><!-- End of Footer -->
 
     </div><!-- main_content_container -->
+
+<!-- ****************************************************** -->
 
     <!-- ============================= -->
     <!-- All your JavaScript comes now -->
@@ -469,6 +488,7 @@
     <!-- Bootstrap core JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Can place script tags with JavaScript files here -->
+
 
     <script type="text/javascript">
       var $root = $('html, body');
@@ -479,7 +499,7 @@
             scrollTop: $(href).offset().top
           }, 500, function () {
             window.location.hash = href;
-            });
+          });
         }
       return false;
       });
