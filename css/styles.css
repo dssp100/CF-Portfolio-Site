@@ -55,15 +55,20 @@ body {
   font-size: 14px;
   padding-top: 20px;
   list-style-type: none;
-  padding-left: 0px;
-  text-align: center;
-  padding: 0px;
+  padding: 0;
 }
 
 #skill-list li {
   font-size: 14px;
   list-style-type: none;
-
+  padding: 0;
+}
+ul#skill-list {
+  padding: 0;
+  font-size: 14px;
+  padding-top: 20px;
+  list-style-type: none;
+  padding: 0;
 }
 
 /* <!-- ****************************************************** --> */
