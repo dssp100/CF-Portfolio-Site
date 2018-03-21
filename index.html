@@ -24,11 +24,18 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".navbar">
+
+     <!-- NavBar Section -->
+<!-- ****************************************************** -->
+
     <!-- Start of NavBar -->
 		<nav class="navbar navbar-default navbar-fixed-top">
-			<div class="container">
-				<!-- Start of Hamburger -->
+
+      <!-- Start of container -->
+      <div class="container">
+
+        <!-- Start of Hamburger -->
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 						<span class="sr-only">Toggle navigation</span>
@@ -38,111 +45,190 @@
 					</button>
 				</div><!-- End of Hamburger -->
 
-        <!-- Start of NavBar left -->
+        <!-- Start of navbar-collapse -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="">Home</a></li>
+
+          <!-- Start of NavBar left -->
+          <ul class="nav navbar-nav">
+						<li class="active"><a href="#home">Home</a></li>
 					</ul><!-- End of NavBar left -->
 
-          <!-- End of NavBar left -->
+          <!-- Start of NavBar right -->
 					<ul class="nav navbar-nav navbar-right">
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="work.html">Work</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-					</ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#faq">FAQ</a></li>
+					</ul><!-- End of NavBar right -->
+
 				</div><!-- End of navbar-collapse -->
-			</div><!-- End of container-fluid -->
-		</nav><!-- End of NavBar -->
 
-    <!-- Start of Carousel -->
-    <div class="container-fluid">
+      </div><!-- End of container -->
+
+    </nav><!-- End of NavBar -->
+
+     <!-- Home Section -->
+<!-- ****************************************************** -->
+
+    <!-- Start of Home Section -->
+    <div class="container-fluid" id="home">
+
+      <!-- Start of Carousel -->
       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-        </ol>
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+          </ol>
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-          <div class="item img0 active">
-            <img src="img/carousel0.png" alt="...">
-            <div class="carousel-caption img0">
-              Devolping the Concept
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item img0 active">
+              <img src="img/carousel0.png" alt="...">
+              <div class="carousel-caption img0">
+                <p class="carousel-text">Develop the Concept</p>
+              </div>
+            </div>
+            <div class="item img1">
+              <img src="img/carousel1.png" alt="...">
+              <div class="carousel-caption img1">
+                <p class="carousel-text">Write the code</p>
+              </div>
+            </div>
+            <div class="item img2">
+              <img src="img/carousel2.png" alt="...">
+              <div class="carousel-caption img2">
+                <p class="carousel-text">Learn to code</p>
+              </div>
+            </div>
+            <div class="item img3">
+              <img src="img/carousel3.png" alt="...">
+              <div class="carousel-caption img3">
+                <p class="carousel-text">Debugg the code</p>
+              </div>
+            </div>
+            <div class="item img4">
+              <img src="img/carousel4.png" alt="...">
+              <div class="carousel-caption img4">
+                <p class="carousel-text">Stay focused</p>
+              </div>
             </div>
           </div>
-          <div class="item img1">
-            <img src="img/carousel1.png" alt="...">
-            <div class="carousel-caption img2">
-              Writing the code
-            </div>
-          </div>
-          <div class="item img2">
-            <img src="img/carousel2.png" alt="...">
-            <div class="carousel-caption img3">
-              Learning to code
-            </div>
-          </div>
-          <div class="item img3">
-            <img src="img/carousel3.png" alt="...">
-            <div class="carousel-caption img4">
-              Debugging the code
-            </div>
-          </div>
-          <div class="item img4">
-            <img src="img/carousel4.png" alt="...">
-            <div class="carousel-caption img5">
-              Stay focused
-            </div>
-          </div>
-        </div>
 
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </div><!-- End of container fluid --> <!-- End of carousel -->
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div><!-- End of carousel -->
 
-    <!-- Start of Container Overview -->
-    <div class="container" id="overview">
+      <!-- Start of Container Overview -->
+      <div id="overview">
 
-      <!-- Start of Row -->
-      <div class="row">
+        <!-- Start of Row -->
+        <div class="row">
 
-        <div class="col-md-4">
-          <h2>Portfolio Concept</h2>
-          <p>I would like in this project to reflect my knowledge and passion by building a beautiful personal web portfolio page that has a great design and is also written in clear and concise code. I did work on some other courses including: Udemy, Freecode camp, Codecademy where I have collected some knowledge and basic skills.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- End of Col -->
+          <div class="col-md-4">
+            <h2>Portfolio Concept</h2>
+            <p>I would like in this project to reflect my knowledge and passion by building a beautiful personal web portfolio page that has a great design and is also written in clear and concise code. I did work on some other courses including: Udemy, Freecode camp, Codecademy where I have collected some knowledge and basic skills.</p>
+            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          </div><!-- End of Col -->
 
-        <div class="col-md-4">
-          <h2>Project Goals</h2>
-          <p>I hope to complete this course within 4 - 5 months depending on the complexity of the course material. I am ready to put in 2 to 5 hours a day depending on what is going on in my live at the moments since I have a full time job and I working on a side project not related to programing. I any case i'm commited to give my best to succed and excell at CarrerFoundry.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- End of Col -->
+          <div class="col-md-4">
+            <h2>Project Goals</h2>
+            <p>I hope to complete this course within 4 - 5 months depending on the complexity of the course material. I am ready to put in 2 to 5 hours a day depending on what is going on in my live at the moments since I have a full time job and I working on a side project not related to programing. I any case i'm commited to give my best to succed and excell at CarrerFoundry.</p>
+            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          </div><!-- End of Col -->
 
-        <div class="col-md-4">
-          <h2>Course Goals</h2>
-          <p>My professional goals are to learn to code web pages and have fun being creative. I would like to be able to bring my ideas to live. If I can publish my ideas and have a good time doing it and make some money with it I would be the happiest guy out there! :)</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- End of Col -->
+          <div class="col-md-4">
+            <h2>Course Goals</h2>
+            <p>My professional goals are to learn to code web pages and have fun being creative. I would like to be able to bring my ideas to live. If I can publish my ideas and have a good time doing it and make some money with it I would be the happiest guy out there! :)</p>
+            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          </div><!-- End of Col -->
+        </div><!-- End of Row -->
+      </div><!-- End of id="overview" -->
+    </div><!-- End of Home Section -->
 
-      </div><!-- End of Row -->
+     <!-- About Section -->
+<!-- ****************************************************** -->
 
-    </div> <!-- End of Contaniner -->
+    <!-- Start of About Section-->
+    <div class="container" id="about" >
 
-    <!-- Start of Container My Work -->
-    <div class="container" id="my-work">
+      <!-- Start of upper-section -->
+      <div class="upper-section">
+
+        <!-- Start of Header -->
+        <div class="page-header text-center">
+          <h1>About Me</h1>
+        </div><!-- End of Header -->
+
+        <!-- Start of Row -->
+        <div class="row">
+
+          <!-- Start of Img -->
+          <div class="col-sm-12 col-md-4">
+            <img src="img/Me.jpg" class="img-responsive" alt="Photo of Daniel Springer">
+          </div><!-- End of Img -->
+
+          <!-- Start of Intro -->
+          <div class="col-sm-12 col-md-4 text-center">
+            <h2>Introduction</h2>
+            <p>Hi and welcome to my about page, hope you enjoy the reading.</p>
+          </div><!-- End of Intro -->
+
+          <!-- Start of My Skills -->
+          <div class="col-sm-12 col-md-4 text-center">
+            <h3>My Skills</h3>
+            <ul id="skill-list">
+              <li>Electrical Engineering</li>
+              <li>Mechanical Engineering</li>
+              <li>Air-Conditioning</li>
+              <li>Refrigeration</li>
+              <li>AV-IT</li>
+              <li>Hydraulics</li>
+              <li>Web Development
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JS</li>
+                  <li>Boostrap</li>
+                </ul>
+              </li>
+            </ul>
+          </div><!-- End of My Skills -->
+
+        </div><!-- End of Row -->
+
+      </div><!-- End of upper-section -->
+
+      <!-- Start of lower-section-->
+      <div class="lower-section">
+
+        <div class="main-text">
+          <h3>More About Me</h3>
+          <p>
+            Long time ago when I started my professional carrier I did an apprenticeship as a electrical engineer. After some years of working and studying I completed my degree. I then spend 9 months in the German Army as this was still compulsory at the time. I then worked for 2 years as a electrical senior programing automated home installations and other kind of industrial systems. I decided then I needed a challenge and purchased a flight ticket to Mallorca in Spain to find work on the Yachts a I always had a great passion for it. I became self-employed und worked for all kind of companies that had to do with electrics or mechanics on Yachts. One day I got an offer to work as permanent crewmember on a yacht and took this opportunity. I enjoyed it so much that I decided to work towards a certification that would allow me become a chief engineer on the bigger Yachts. After 12 years of working studying and working I achieve the highest license you can obtain as chief engineer on Yachts. I always had the passion the passion to program things and that sense of achievement to bring something alive or get some to work has become stronger and I had the decided I wanted to build apple apps. I enjoyed it, but felt web development was more my thing. I had then started several courses including Free code camp, Udemy courses, Codecademy. I stumbled across the Carrerfoundry and liked the support option that they provide with an designated Tutor / Mentor. Now I’m here and hope this course will bring me to the next level.
+          </p>
+        </div><!-- End of main-text -->
+
+      </div><!-- End of id lower Section-->
+
+    </div><!-- End of About Section-->
+
+     <!-- Work Section -->
+<!-- ****************************************************** -->
+
+    <!-- Start of Work Section -->
+    <div class="container" id="work">
+
       <h2 class="display-4 text-center py-5">My Work</h2>
 
       <div class="row" id="work">
@@ -171,7 +257,209 @@
           <img src="img/underConstruction.png" class="img-responsive"alt="Under Construction">
         </div>
       </div><!-- End of row -->
-    </div><!-- End of Container Overview -->
+
+    </div><!-- End of Work Section -->
+
+     <!-- Contact Section -->
+<!-- ****************************************************** -->
+    <!-- Start of Contact Section -->
+    <div class="container-fluid" id="contact">
+
+      <div class="jumbotron contact_page_jumbotron" >
+        <div class="contact_page_container">
+          <div class="header contact_page_header">
+            <h1>My contact details</h1>
+            <p>Feel free to send me a email or call me if you want.</p>
+          </div><!-- End of header -->
+        </div><!-- End of contact_page_container -->
+      </div><!-- End of jumbotron -->
+
+      <!-- Start of the main content area -->
+      <div class="contact_page_main" >
+
+        <div class="contact_page_container">
+
+          <ul>
+            <li> <span class="glyphicon glyphicon-envelope"></span> Email: dssp100@gmail.com</li>
+            <li> <span class="glyphicon glyphicon-phone-alt"></span> Phone Nr: 0033 061234567</li>
+            <li> <span class="glyphicon glyphicon-home"></span> Home Address: Somewhere in Monte Carlo</li>
+          </ul>
+
+          <div class="social">
+            <p><a href="#">Facebook</a></p>
+            <p><a href="#">Twitter</a></p>
+          </div><!-- End of social-->
+
+        </div><!-- End contact-container -->
+
+      </div><!-- End of contact_page_container -->
+
+    </div><!-- End of Contact Section -->
+
+     <!-- faq Section -->
+<!-- ****************************************************** -->
+
+    <!-- Start of Jumbotron -->
+    <div class="jumbotron faq_page_jumbotron" id="faq">
+      <div class="container faq_page_container">
+        <div class="header faq_page_header">
+          <h1>FAQ's</h1>
+          <p>Here you find some common asked questions.</p>
+        </div><!-- end of container -->
+      </div><!-- end of header-container -->
+    </div><!-- end of jumbotron -->
+
+    <!-- Start of Main Content  -->
+    <div class="faq_content_container">
+      <h1>Click on a topic to see the answer</h1>
+
+      <!-- Start of Accordion  -->
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+        <!-- Start of Collapsible Group Item #1  -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                #1 Why did you decide to become a web developer?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+              I enjoy being creative and I have a lot of ideas that I want to bring alive. My ideas once alive will hopefully help others.
+              I also enjoy lerning new things and not staying at the same level.
+              <br>
+              <span class="glyphicon glyphicon-thumbs-up"></span>
+            </div>
+          </div>
+        </div><!-- End of Collapsible Group Item #1  -->
+
+        <!-- Start of Collapsible Group Item #2  -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingTwo">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                #2 What is your design process?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="panel-body">
+              <h3>I approche it following this 6 steps</h3>
+              <br>
+              <h4>1. Define the Problem</h4>
+              <p>You can’t find a solution until you have a clear idea of what the problem is.</p>
+              <br>
+              <h4>2. Collect Information</h4>
+              <p>Collect sketches, take photographs and gather data to start giving you inspiration.</p>
+              <br>
+              <h4>3. Brainstorm and Analyze Ideas</h4>
+              <p>Begin to sketch, make, and study so you can start to understand how all the data and information you’ve collected may impact your design.</p>
+              <br>
+              <h4>4. Develop Solutions</h4>
+              <p>Take your preliminary ideas and form multiple small-scale design solutions.</p>
+              <br>
+              <h4>5. Gather Feedback</h4>
+              <p>Present your ideas to as many people as possible: friends, teachers, professionals, and any others you trust to give insightful comments.</p>
+              <br>
+              <h4>6. Improve</h4>
+              <p>Reflect on all of your feedback and decide if or to what extent it should be incorporated. It is often helpful to take solutions back through the Design Process to refine and clarify them.</p>
+              <br>
+              <span class="glyphicon glyphicon-apple"></span>
+            </div>
+          </div>
+        </div><!-- End of Collapsible Group Item #2  -->
+
+        <!-- Start of Collapsible Group Item #3  -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingThree">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                #3 Who are your clients?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+            <div class="panel-body">
+              <ul>
+              <li>Private Customers: Friends, Family that need a page to promote their ideas</li>
+              <li>Companies: Looking for hardworking and comited freelacer to assist with their projects</li>
+            </ul>
+            <br>
+            <span class="glyphicon glyphicon-king"></span>
+            </div>
+          </div>
+        </div><!-- End of Collapsible Group Item #3  -->
+
+        <!-- Start of Collapsible Group Item #4  -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingFour">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                #4 What is your average project turnaround?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+            <div class="panel-body">
+              Good question. Each project is different in terms of size, needs, and collaboration. We will quote a timeframe before starting with a new client. But most website projects are complete in about 4 weeks.
+              Really, we can get most websites done even faster, but our speed requires the client to provide materials and information on time. So if having a quick turnaround is a priority for you, we can deliver faster timeframes if you can provide your content right away.
+              <br>
+              <span class="glyphicon glyphicon-send"></span>
+            </div>
+          </div>
+        </div><!-- End of Collapsible Group Item #4  -->
+
+        <!-- Start of Collapsible Group Item #5  -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingFive">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                #5 How will you succeed in this field
+              </a>
+            </h4>
+          </div>
+          <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+            <div class="panel-body">
+              By comitment and persitance. I will work hard in becoming a great developer in the near future. I will work everyday in getting better.
+              <br>
+              <span class="glyphicon glyphicon-flash"></span>
+            </div>
+          </div>
+        </div><!-- Start of Collapsible Group Item #5  -->
+
+      </div><!-- End of Accordion  -->
+
+    <!-- Start of Footer -->
+    <div>
+      <h3>Let me know if you have more questions</h3>
+      <br>
+      <div class="container-fluid text-center">
+        <span>
+          <a href="mailto:dssp@freenet.de Subject=Hello" target="_top">
+          <i class="fa fa-envelope-o fa-5x" aria-hidden="true"></i>
+          </a>
+        </span>
+        <span>
+          <a href="https://twitter.com/dssp100" target="_top">
+          <i class="fa fa-twitter fa-5x" aria-hidden="true"></i>
+          </a>
+        </span>
+        <span>
+          <a href="https://github.com/dssp100" target="_top">
+          <i class="fa fa-github fa-5x" aria-hidden="true"></i>
+          </a>
+        </span>
+       <span>
+          <a href="https://github.com/dssp100" target="_top">
+          <i class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i>
+          </a>
+        </span>
+    </div>
+    </div><!-- End of Footer -->
+
+    </div><!-- main_content_container -->
 
     <!-- ============================= -->
     <!-- All your JavaScript comes now -->
