@@ -10,7 +10,8 @@ body {
   position: relative;
 }
 
-/*Navigation bar*/
+/* <!-- NavBar Section -->
+<!-- ****************************************************** --> */
 .navbar {
   margin-bottom: 0px;
   z-index: 1;
@@ -19,11 +20,8 @@ body {
   font-size: 32px;
 }
 
-
-
-/**********************/
-/***** Index page *****/
-/**********************/
+/* <!-- Home Section -->
+<!-- ****************************************************** --> */
 
 /* Carousel styling */
 #carousel-example-generic {
@@ -45,35 +43,39 @@ body {
 
 
 
-/**********************/
-/***** About page *****/
-/**********************/
+/* <!-- About Section -->
+<!-- ****************************************************** --> */
 
-.page-header {
-  margin-top: 6em;
+.about-section h1 {
+  margin-top: 2em;
 }
 
+/* <!-- Work Section -->
+<!-- ****************************************************** --> */
 
-/**********************/
-/**** Contact page ****/
-/**********************/
+.work-section h2 {
+  margin-top: 2.5em;
+}
+
+/* <!-- Contact Section -->
+<!-- ****************************************************** --> */
 
 .contact_page_jumbotron {
   text-align: center;
+
   /* outline: 20px dotted white;
   outline-offset: -22px; */
-  /* padding-top: 98px; */
+
 }
 
 /* jumbotron img styling */
-.contact_page_jumbotron,
-.faq_page_jumbotron {
+.contact_page_jumbotron {
   text-align: center;
   margin-bottom: 0px;
   background-color: rgba(241, 241, 241, 1.000);
   color: rgba(71, 78, 93, 1.000);
   border: 20px dotted white;
-  margin-top: 70px;
+  margin-top: 72px;
 }
 .contact_page_header h1,
 .faq_page_header h1 {
@@ -133,13 +135,14 @@ body {
   }
 }
 
-/**********************/
-/****** Faq page ******/
-/**********************/
-
+/* <!-- faq Section -->
+<!-- ****************************************************** --> */
+#faq{
+  padding-top: 160px;
+}
 .faq_content_container {
   text-align: center;
-  margin-top: 70px;
+  /* margin-top: 70px; */
 }
 .panel-title {
   color: rgba(42, 134, 209, 1.000);

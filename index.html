@@ -55,7 +55,7 @@
 
           <!-- Start of NavBar right -->
 					<ul class="nav navbar-nav navbar-right">
-            <li><a href="#about">About</a></li>
+            <li><a href="#about">About Me</a></li>
             <li><a href="#work">Work</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="#faq">FAQ</a></li>
@@ -160,7 +160,7 @@
 <!-- ****************************************************** -->
 
     <!-- Start of About Section-->
-    <div class="container" id="about" >
+    <div class="container about-section">
 
       <!-- Start of upper-section -->
       <div class="upper-section">
@@ -223,13 +223,15 @@
 
     </div><!-- End of About Section-->
 
+      </div>
+
      <!-- Work Section -->
 <!-- ****************************************************** -->
 
     <!-- Start of Work Section -->
-    <div class="container" id="work">
+    <div class="container work-section" id="work">
 
-      <h2 class="display-4 text-center py-5">My Work</h2>
+      <h2 class="display-4 text-center py-5 page-header">My Work</h2>
 
       <div class="row" id="work">
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
@@ -262,11 +264,12 @@
 
      <!-- Contact Section -->
 <!-- ****************************************************** -->
+
     <!-- Start of Contact Section -->
-    <div class="container-fluid" id="contact">
+    <div id="contact">
 
       <div class="jumbotron contact_page_jumbotron" >
-        <div class="contact_page_container">
+        <div class="container contact_page_container">
           <div class="header contact_page_header">
             <h1>My contact details</h1>
             <p>Feel free to send me a email or call me if you want.</p>
@@ -296,7 +299,7 @@
 
     </div><!-- End of Contact Section -->
 
-     <!-- faq Section -->
+    <!-- faq Section -->
 <!-- ****************************************************** -->
 
     <!-- Start of Jumbotron -->
@@ -320,7 +323,7 @@
         <div class="panel panel-default">
           <div class="panel-heading" role="tab" id="headingOne">
             <h4 class="panel-title">
-              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                 #1 Why did you decide to become a web developer?
               </a>
             </h4>
@@ -468,6 +471,21 @@
     <!-- Bootstrap core JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Can place script tags with JavaScript files here -->
+
+    <script type="text/javascript">
+      var $root = $('html, body');
+      $('.navbar-nav a').click(function() {
+        var href = $.attr(this, 'href');
+        if (href != undefined && href != '#') {
+          $root.animate({
+            scrollTop: $(href).offset().top
+          }, 500, function () {
+            window.location.hash = href;
+            });
+        }
+      return false;
+      });
+    </script>
 
   </body>
 </html>
