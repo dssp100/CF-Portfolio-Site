@@ -60,8 +60,8 @@ body {
 /* <!-- Contact Section -->
 <!-- ****************************************************** --> */
 
-.contact_page_jumbotron {
-  text-align: center;
+#contact {
+  padding-top: 50px;
 
   /* outline: 20px dotted white;
   outline-offset: -22px; */
@@ -69,13 +69,14 @@ body {
 }
 
 /* jumbotron img styling */
-.contact_page_jumbotron {
+.contact_page_jumbotron,
+.faq_page_jumbotron {
   text-align: center;
   margin-bottom: 0px;
   background-color: rgba(241, 241, 241, 1.000);
   color: rgba(71, 78, 93, 1.000);
   border: 20px dotted white;
-  margin-top: 72px;
+
 }
 .contact_page_header h1,
 .faq_page_header h1 {
@@ -84,7 +85,8 @@ body {
   letter-spacing: 5px
 }
 
-.contact_page_main, .faq_page_main {
+.contact_page_main,
+.faq_page_main {
   background-image: url(../img/Mc.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -109,7 +111,7 @@ body {
 }
 
 .contact_page_container, ul {
-  padding-top: 20px;
+  /* padding-top: 20px; */
   list-style-type: none;
   padding-left: 0px;
 }
@@ -123,17 +125,17 @@ body {
 }
 
 /* For bigger screen sizes */
-@media screen and (min-width: 668px){
+/* @media screen and (min-width: 668px){
   .contact_page_main {
     padding-top: 50px;
     font-size: 2.5em;
-  }
+  } */
 
-  .contact_page_container, .social p {
+  /* .contact_page_container, .social p {
     margin: 40px;
     padding: 15px;
   }
-}
+}*/
 
 /* <!-- faq Section -->
 <!-- ****************************************************** --> */
@@ -142,7 +144,7 @@ body {
 }
 .faq_content_container {
   text-align: center;
-  /* margin-top: 70px; */
+  margin-top: 70px;
 }
 .panel-title {
   color: rgba(42, 134, 209, 1.000);
