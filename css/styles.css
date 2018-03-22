@@ -195,4 +195,7 @@ ul#skill-list {
     #faq{
     padding-top: 3.6em;
     }
+    .contact_page_main {
+      background-position: 0% 80%
+    }
 }
