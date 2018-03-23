@@ -126,6 +126,10 @@ ul#skill-list {
   text-align: center;
 }
 
+.phone-number a {
+  color: white;
+}
+
 .glyphicon:hover {
   text-decoration: underline;
 
