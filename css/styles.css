@@ -8,6 +8,11 @@ body {
   position: relative;
 }
 
+.text {
+  font-size: 20px;
+}
+
+
 
 /* <!-- ****************************************************** --> */
 /* <!-- NavBar Section --> */
@@ -57,7 +62,7 @@ body {
 }
 
 #skill-list li {
-  font-size: 14px;
+  font-size: 20px;
   list-style-type: none;
   padding: 0;
 }
@@ -108,7 +113,7 @@ ul#skill-list {
   /* Start paralax styling */
   background-image: url(../img/Mc.jpg);
   /*Add a background image*/
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   /*Give the background a fixed position does it not scroll when you scroll*/
   background-size: cover;
   /*Have the background cover the entire div section*/
