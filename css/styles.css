@@ -124,24 +124,6 @@ ul#skill-list {
   height: 400px;
   /* End paralax styling */
 
-  @media(max-width:550px){
-  .parallax-window{.contact_page_main,
-.faq_page_main {
-  /* Start paralax styling */
-  background-image: url(../img/Mc.jpg);
-  /*Add a background image*/
-  /* background-attachment: fixed; */
-  /*Give the background a fixed position does it not scroll when you scroll*/
-  background-size: cover;
-  /*Have the background cover the entire div section*/
-  color: white;
-  /*Change the color of the text on top so it is readable and adjust the padding as needed.*/
-  padding:100px;
-  padding-top: 50px;
-  height: 400px;
-  }
-}
-
   background-repeat: no-repeat;
   background-size: 100%;
   width: auto;
