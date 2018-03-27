@@ -217,4 +217,9 @@ ul#skill-list {
 
 .twitter-follow-button {
    text-align: center;
+   margin-bottom: 5px;
+}
+
+.fb-like {
+  margin-bottom: 20px;
 }
