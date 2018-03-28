@@ -363,17 +363,50 @@ fjs.parentNode.insertBefore(js, fjs);
     <!-- Start of the main content area -->
     <div class="contact_page_main" >
 
-      <div class="contact_page_container">
+      <div class="contact_page_container col-lg-4 col-md-4">
 
         <ul>
           <li> <span class="glyphicon glyphicon-envelope"></span> Email: dssp100@gmail.com</li>
-          <li class="phone-number"> <span class="glyphicon glyphicon-phone-alt"></span> Phone Nr:<a href="tel:0033061234567">0033 061234567</a></li>
+          <li class="phone-number"> <span class="glyphicon glyphicon-phone-alt"></span> Phone Nr:<a href="tel:0033061234567"> 0033 061234567</a></li>
           <li> <span class="glyphicon glyphicon-home"></span> Home Address: Somewhere in Monte Carlo</li>
         </ul>
 
       </div><!-- End contact-container -->
 
-    </div><!-- End of contact_page_container -->
+      <!-- Start of container form-container col-lg-4 col-md-4 -->
+
+      <div class="container form-container col-lg-4 col-md-4">
+        <div class="form-group">
+          <form>
+            <h3>Get in touch!</h3>
+            <label for="Name">Name</label>
+
+            <div class="form-group">
+              <input class="form-control" type="Name" placeholder="Enter your name" minlength="3" required="required">
+            </div>
+
+            <label for="LastName">Last Name</label>
+            <div class="form-group">
+              <input class="form-control" type="LastName" placeholder="Enter your last name" minlength="5" required="required">
+            </div>
+
+            <label for="Email">Email address</label>
+            <div class="form-group">
+              <input class="form-control" type="email" placeholder="Enter your email" required="required">
+            </div>
+            <label for="Message">Message</label>
+            <textarea class="form-control" style="resize:none" cols="40" rows="5" placeholder="Enter your message" minlength="20" required="required"></textarea>
+            <button type="submit" class="btn btn-default submit-button">Submit</button>
+          </form>
+        </div><!-- End of form-group -->
+
+      </div><!-- End of container form-container col-lg-4 col-md-4 -->
+
+    </div><!-- End of contact_page_main -->
+
+
+
+
 
 <!-- ****************************************************** -->
 <!-- faq Section -->

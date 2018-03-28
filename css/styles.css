@@ -158,13 +158,16 @@ ul#skill-list {
   font-size: 1.5em;
 }
 
-.social {
-  display: inline;
+.form-container {
+  margin-top: 30px;
+}
+.form-control {
+  width: 100%;
+}
+.submit-button {
+  margin-top: 15px;
 }
 
-.social a {
-  color: white;
-}
 
 /* <!-- ****************************************************** --> */
 /* <!-- faq Section --> */
@@ -206,10 +209,15 @@ ul#skill-list {
     #faq{
     padding-top: 3.6em;
     }
+    
     .contact_page_main {
       background-position: 0% 80%
     }
+
 }
+
+/* <!-- ****************************************************** --> */
+/* <!-- footer Section --> */
 
 .copyright {
   margin-top: 40px;
