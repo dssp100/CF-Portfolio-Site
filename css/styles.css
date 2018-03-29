@@ -217,19 +217,18 @@ button.btn.btn-primary.modal-button {
     padding: 15px;
     }
 
-    #contact {
+  #contact {
     padding-top: 3.6em;
-    }
+  }
 
-    #faq{
+  #faq{
     padding-top: 3.6em;
-    }
+  }
 
-    .contact_page_main {
-      background-position: 0% 80%
-      /* height: 400px; */
+  .contact_page_main {
+    background-position: 0% 80%;
+    height: 600px;
     }
-
 }
 
 /* <!-- ****************************************************** --> */
