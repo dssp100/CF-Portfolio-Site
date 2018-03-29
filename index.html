@@ -363,7 +363,7 @@ fjs.parentNode.insertBefore(js, fjs);
     <!-- Start of the main content area -->
     <div class="contact_page_main" >
 
-      <div class="contact_page_container col-lg-4 col-md-4">
+      <div class="contact_page_container col-xs-12 col-md-6">
 
         <ul>
           <li> <span class="glyphicon glyphicon-envelope"></span> Email: dssp100@gmail.com</li>
@@ -375,28 +375,30 @@ fjs.parentNode.insertBefore(js, fjs);
 
       <!-- Start of container form-container col-lg-4 col-md-4 -->
 
-      <div class="container form-container col-lg-4 col-md-4">
+      <div class="container form-container col-xs-12 col-md-4">
         <div class="form-group">
           <form>
             <h3>Get in touch!</h3>
-            <label for="Name">Name</label>
 
+            <label for="firstName">First Name</label>
             <div class="form-group">
-              <input class="form-control" type="Name" placeholder="Enter your name" minlength="3" required="required">
+              <input class="form-control" type="text" id="firstName" name="firstName" placeholder="Enter your first name" minlength="3" required="required">
             </div>
 
-            <label for="LastName">Last Name</label>
+            <label for="lastName">Last Name</label>
             <div class="form-group">
-              <input class="form-control" type="LastName" placeholder="Enter your last name" minlength="5" required="required">
+              <input class="form-control" type="text" id="latName" name="lastName" placeholder="Enter your last name" minlength="5" required="required">
             </div>
 
-            <label for="Email">Email address</label>
+            <label for="email">Email address</label>
             <div class="form-group">
-              <input class="form-control" type="email" placeholder="Enter your email" required="required">
+              <input class="form-control" type="email" id="email" name="email" placeholder="Enter your email" required="required">
             </div>
-            <label for="Message">Message</label>
-            <textarea class="form-control" style="resize:none" cols="40" rows="5" placeholder="Enter your message" minlength="20" required="required"></textarea>
-            <button type="submit" class="btn btn-default submit-button">Submit</button>
+
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" name="message" style="resize:none" cols="40" rows="5" placeholder="Enter your message" minlength="20" required="required"></textarea>
+
+            <button type="submit" class="btn btn-primary submit-button">Submit</button>
           </form>
         </div><!-- End of form-group -->
 

@@ -162,7 +162,7 @@ ul#skill-list {
   margin-top: 30px;
 }
 .form-control {
-  width: 100%;
+  max-width: 100%;
 }
 .submit-button {
   margin-top: 15px;
@@ -209,7 +209,7 @@ ul#skill-list {
     #faq{
     padding-top: 3.6em;
     }
-    
+
     .contact_page_main {
       background-position: 0% 80%
     }
