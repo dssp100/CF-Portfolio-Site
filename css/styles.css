@@ -73,6 +73,16 @@ ul#skill-list {
   list-style-type: none;
 }
 
+/** Tooltip styling **/
+.tooltip-inner {
+  color: #fff !important;
+  background: rgba(51, 121, 183, 1.000) !important;
+}
+.tooltip.right .tooltip-arrow {
+  border-right: 5px solid rgba(51, 121, 183, 1.000);
+
+}
+
 /* <!-- ****************************************************** --> */
 /* <!-- Work Section --> */
 
@@ -160,6 +170,7 @@ ul#skill-list {
 .form-container {
   margin-top: 30px;
 }
+
 .form-control {
   max-width: 100%;
 }

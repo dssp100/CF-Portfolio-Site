@@ -164,20 +164,30 @@ fjs.parentNode.insertBefore(js, fjs);
 
           <div class="col-md-4">
             <h2>Portfolio Concept</h2>
-            <p class="text">I would like in this project to reflect my knowledge and passion by building a beautiful personal web portfolio page that has a great design and is also written in clear and concise code. I did work on some other courses including: Udemy, Freecode camp, Codecademy where I have collected some knowledge and basic skills.</p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            <p class="text">I would like in this project to reflect my knowledge and passion by building a beautiful personal web portfolio page that has a great design and is also written in clear and concise code. I did work on some other courses including: Udemy, FreeCodeCamp, Codecademy where I have collected some knowledge and basic skills.</p>
+
+
+            <section class="content">
+              <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Click here to see more info">View details &raquo;</button>
+            </section>
           </div><!-- End of Col -->
 
           <div class="col-md-4">
             <h2>Project Goals</h2>
             <p class="text">I hope to complete this course within 4 - 5 months depending on the complexity of the course material. I am ready to put in 2 to 5 hours a day depending on what is going on in my live at the moments since I have a full time job and I working on a side project not related to programing. I any case i'm commited to give my best to succed and excell at CarrerFoundry.</p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            
+            <section class="content">
+              <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Click here to see more info">View details &raquo;</button>
+            </section>
           </div><!-- End of Col -->
 
           <div class="col-md-4">
             <h2>Course Goals</h2>
             <p class="text">My professional goals are to learn to code web pages and have fun being creative. I would like to be able to bring my ideas to live. If I can publish my ideas and have a good time doing it and make some money with it I would be the happiest guy out there! :)</p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+
+            <section class="content">
+              <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Click here to see more info">View details &raquo;</button>
+            </section>
           </div><!-- End of Col -->
 
         </div><!-- End of Row -->
@@ -221,12 +231,16 @@ fjs.parentNode.insertBefore(js, fjs);
           <div class="col-sm-12 col-md-4 text-center">
             <h2>My Skills</h2>
             <ul id="skill-list">
-              <li class="text">Electrical Engineering</li>
-              <li>Mechanical Engineering</li>
-              <li>Air-Conditioning</li>
-              <li>Refrigeration</li>
-              <li>AV-IT</li>
-              <li>Hydraulics</li>
+              <!-- <li class="text">Electrical Engineering</li> -->
+              <li>Engineering
+                <ul>
+                  <li>* Mechanical Engineering</li>
+                  <li>* Air-Conditioning</li>
+                  <li>* Refrigeration</li>
+                  <li>* AV-IT</li>
+                  <li>* Hydraulics</li>
+                </ul>
+              </li>
               <br>
               <li>Web Development
                 <ul>
@@ -237,7 +251,7 @@ fjs.parentNode.insertBefore(js, fjs);
                 </ul>
               </li>
               <br>
-              <li>Languages
+              <li>Spoken Languages
                 <ul>
                   <li>* German</li>
                   <li>* Spanish</li>
@@ -702,6 +716,13 @@ fjs.parentNode.insertBefore(js, fjs);
     <!-- Bootstrap core JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Can place script tags with JavaScript files here -->
+
+    <!-- Smooth scroling -->
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
 
     <!-- Smooth scroling -->
     <script type="text/javascript">
