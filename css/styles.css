@@ -175,6 +175,10 @@ ul#skill-list {
   padding-top: 3.5em;
 }
 
+.modal-row {
+  margin-bottom: 20px;
+}
+
 h1.learn-more {
   text-align: left;
   float: left;
@@ -189,6 +193,12 @@ h1.learn-more {
 
 button.btn.btn-primary.modal-button {
   margin-top: 10px;
+}
+
+#modalembed {
+    height: 500px;
+    width: 100%;
+    padding: 10px;
 }
 
 .faq_content_container {
