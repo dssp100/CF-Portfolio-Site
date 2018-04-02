@@ -12,8 +12,6 @@ body {
   font-size: 20px;
 }
 
-
-
 /* <!-- ****************************************************** --> */
 /* <!-- NavBar Section --> */
 
@@ -21,6 +19,7 @@ body {
   margin-bottom: 0px;
   z-index: 1;
 }
+
 .nav li a {
   font-size: 32px;
 }
@@ -66,6 +65,7 @@ body {
   list-style-type: none;
   padding: 0;
 }
+
 ul#skill-list {
   padding: 0;
   font-size: 14px;
@@ -78,9 +78,9 @@ ul#skill-list {
   color: #fff !important;
   background: rgba(51, 121, 183, 1.000) !important;
 }
+
 .tooltip.right .tooltip-arrow {
   border-right: 5px solid rgba(51, 121, 183, 1.000);
-
 }
 
 /* <!-- ****************************************************** --> */
@@ -89,6 +89,7 @@ ul#skill-list {
 .work-section h2 {
   margin-top: 2.5em;
 }
+
 .work-section img calc {
   width: 50px;
   height: 50px;
@@ -127,7 +128,7 @@ ul#skill-list {
   /*Give the background a fixed position does it not scroll when you scroll*/
   background-size: cover;
   /*Have the background cover the entire div section*/
-  color: white;
+  color: rgba(248, 248, 248, 1.000);
   /*Change the color of the text on top so it is readable and adjust the padding as needed.*/
   padding:100px;
   padding-top: 50px;
@@ -137,13 +138,13 @@ ul#skill-list {
   background-size: 100%;
   width: auto;
   height: 1000px;
-  color: white;
+  color: rgba(248, 248, 248, 1.000);
   font-size: 1.2em;
   text-align: center;
 }
 
 .phone-number a {
-  color: white;
+  color: rgba(248, 248, 248, 1.000);
 }
 
 .glyphicon:hover {
@@ -154,7 +155,7 @@ ul#skill-list {
 .contact_page_container .social p,
 .faq_page_container .social p {
   display: inline-block;
-  border: 2px solid white;
+  border: 2px solid rgba(248, 248, 248, 1.000);
   border-radius: 5px;
   margin: 20px;
   padding: 5px;
@@ -174,6 +175,7 @@ ul#skill-list {
 .form-control {
   max-width: 100%;
 }
+
 .submit-button {
   margin-top: 15px;
 }
@@ -207,9 +209,9 @@ button.btn.btn-primary.modal-button {
 }
 
 #modalembed {
-    height: 500px;
-    width: 100%;
-    padding: 10px;
+  height: 500px;
+  width: 100%;
+  padding: 10px;
 }
 
 .faq_content_container {
@@ -231,25 +233,25 @@ button.btn.btn-primary.modal-button {
 @media (min-width: 768px) {
   .contact_page_container, ul {
     font-size: 1.3em;
-    }
+  }
 
   .contact_page_container, .social p {
     margin: 40px;
     padding: 15px;
-    }
+  }
 
   #contact {
     padding-top: 3.6em;
   }
 
-  #faq{
+  #faq {
     padding-top: 3.6em;
   }
 
   .contact_page_main {
     background-position: 0% 80%;
     height: 600px;
-    }
+  }
 }
 
 /* <!-- ****************************************************** --> */
@@ -260,8 +262,8 @@ button.btn.btn-primary.modal-button {
 }
 
 .twitter-follow-button {
-   text-align: center;
-   margin-bottom: 5px;
+  text-align: center;
+  margin-bottom: 5px;
 }
 
 .fb-like {
