@@ -48,7 +48,7 @@ $(document).ready(function(){
     });
 
     // Changes the background color of the form fields
-    $('#firstName, #lastName, #email, #message').css('background', 'rgba(54, 90, 168, 1.000)');
+    $('#firstName, #lastName, #email, #message').css('background', 'rgba(219, 241, 251, 1.000)');
 
     // Alert msg on statup
     $(function(){
