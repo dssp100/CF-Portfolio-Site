@@ -26,8 +26,6 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
   </head>
 
   <body data-spy="scroll" data-target=".navbar">
@@ -35,13 +33,7 @@
 <!-- ****************************************************** -->
 <!-- Facebook SDK -->
     <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.12';
-    fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+
 
 
 <!-- ****************************************************** -->
@@ -414,7 +406,7 @@
 
             <div class="form-group">
               <label for="lastName">Last Name</label>
-              <input class="form-control" type="text" id="latName" name="lastName" placeholder="Enter your last name" minlength="5" required="required">
+              <input class="form-control" type="text" id="lastName" name="lastName" placeholder="Enter your last name" minlength="5" required="required">
             </div>
 
             <div class="form-group">
@@ -425,9 +417,10 @@
             <div class="form-group">
               <label for="message">Message</label>
               <textarea class="form-control" id="message" name="message" style="resize:none" cols="40" rows="5" placeholder="Enter your message" minlength="20" required="required"></textarea>
+              <p id="visible-comment"></p>
             </div>
 
-            <button type="submit" class="btn btn-primary submit-button">Submit</button>
+            <button type="submit" id="form-button" class="btn btn-primary submit-button">Submit</button>
           </form>
         </div><!-- End of form-group -->
 
@@ -716,29 +709,6 @@
     <!-- Bootstrap core JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Can place script tags with JavaScript files here -->
-
-    <!-- Smooth scroling -->
-    <script>
-      $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-      })
-    </script>
-
-    <!-- Smooth scroling -->
-    <script type="text/javascript">
-      var $root = $('html, body');
-      $('.navbar-nav a').click(function() {
-        var href = $.attr(this, 'href');
-        if (href != undefined && href != '#') {
-          $root.animate({
-            scrollTop: $(href).offset().top
-          }, 500, function () {
-            window.location.hash = href;
-          });
-        }
-      return false;
-      });
-    </script>
 
     <script type="text/javascript" src="js/scripts.js"></script>
 
