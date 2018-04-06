@@ -44,7 +44,7 @@ $(document).ready(function(){
 
 
       if(comment === ""){
-        $('#message').css('border-color', 'red');
+        $('#message').css('border', 'solid 3px red');
       }else{
         console.log(comment.toUpperCase()+ " : This was your msg") ;
         $('#visible-comment').html(comment);
@@ -71,7 +71,7 @@ $(document).ready(function(){
       if(charCount > 50) {
         $('#char-count').css('color', 'red');
       } else {
-        $('#char-count').css('color', 'black');
+        $('#char-count').css('color', 'white');
       }
     });
 

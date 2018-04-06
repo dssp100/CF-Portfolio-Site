@@ -176,6 +176,11 @@ ul#skill-list {
   max-width: 100%;
 }
 
+#char-count {
+  font-size: 25px;
+  font-weight: 900;
+}
+
 .submit-button {
   margin-top: 15px;
 }
