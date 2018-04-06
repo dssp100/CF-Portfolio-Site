@@ -73,7 +73,6 @@ $(document).ready(function(){
       } else {
         $('#char-count').css('color', 'black');
       }
-
     });
 
 
