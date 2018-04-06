@@ -41,9 +41,15 @@ $(document).ready(function(){
     // Hides the message box when submit button is pressed.
     $('#form-button').on('click', function() {
       var comment = $('#message').val();
-      console.log(comment.toUpperCase()+ " : This was your msg") ;
-      $('#visible-comment').html(comment);
-      $('#message').hide();
+
+
+      if(comment === ""){
+        $('#message').css('border-color', 'red');
+      }else{
+        console.log(comment.toUpperCase()+ " : This was your msg") ;
+        $('#visible-comment').html(comment);
+        $('#message').hide();
+      };
       return false;
     });
 
@@ -55,6 +61,20 @@ $(document).ready(function(){
       alert("Welcome to my page");
     });
 
-    //
+    //Count the message box characters and display number
+    $('#message').on('keyup', function(){
+      console.log('keyup active');
+      var charCount = $('#message').val().length;
+      console.log(charCount);
+      $("#char-count").html(charCount);
+
+      if(charCount > 50) {
+        $('#char-count').css('color', 'red');
+      } else {
+        $('#char-count').css('color', 'black');
+      }
+
+    });
+
 
 });
