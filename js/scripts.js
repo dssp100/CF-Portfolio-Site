@@ -88,6 +88,12 @@ $(document).ready(function(){
           <p><a href='"+ link[i] + "' class='btn btn-primary' role='button'>Show</a> <a href='#'></a></p>\
         </div>\
   ");
+    var images = $("#work img");
+      if(i%2 === 0){
+    $(images[i]).css("border", "2px solid DodgerBlue");
+      } else {
+    $(images[i]).css("border", "2px solid salmon");
+  };
 };
 
 
