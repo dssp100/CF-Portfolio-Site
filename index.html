@@ -280,17 +280,16 @@
 <!-- Work Section -->
 
     <!-- Start of Work Section -->
-    <div id="work"></div>
 
-    <!-- Start of container work-section-->
-    <div class="container work-section">
-
-      <h2 class="display-4 text-center py-5 page-header">My Work</h2>
 
       <!-- Start of row -->
-      <div class="row">
+        <div class="container">
+          <h2 class="display-4 text-center py-5 page-header">My Work</h2>
+          <div class="row" id="work">
+          </div><!-- / row -->
+        </div><!-- / container -->
 
-        <div class="col-sm-6 col-md-4 text-center">
+        <!-- <div class="col-sm-6 col-md-4 text-center">
           <div class="thumbnail">
             <img style="width: 100px; height: 100px" src="img/Elon.png" alt="Sample Image">
             <div class="caption">
@@ -299,9 +298,9 @@
               <p><a href="https://codepen.io/dssp/full/yPRwYp/" class="btn btn-primary" role="button">Show</a> <a href="#"></a></p>
             </div>
           </div>
-        </div>
+        </div> -->
 
-        <div class="col-sm-6 col-md-4 text-center">
+        <!-- <div class="col-sm-6 col-md-4 text-center">
           <div class="thumbnail">
             <img style="width: 100px; height: 100px" src="img/calc.jpg" alt="Sample Image">
               <div class="caption">
@@ -354,11 +353,13 @@
               <p><a href="#" class="btn btn-primary" role="button">Show</a> <a href="#"></a></p>
             </div>
           </div>
-        </div>
+        </div> -->
 
-      </div><!-- End of row -->
+      <!-- </div> -->
+      <!-- End of row -->
 
-    </div><!-- Start of container work-section--><!-- End of Work Section -->
+    <!-- </div> -->
+    <!-- Start of container work-section--><!-- End of Work Section -->
 
 <!-- ****************************************************** -->
 <!-- Contact Section -->
@@ -420,7 +421,6 @@
               <textarea class="form-control" id="message" name="message" style="resize:none" cols="40" rows="5" placeholder="Enter your message" minlength="20" required="required"></textarea>
               <p id="visible-comment"></p>
               <p id="char-count"></p>
-
             </div>
 
             <button type="submit" id="form-button" class="btn btn-primary submit-button">Submit</button>
@@ -713,6 +713,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Can place script tags with JavaScript files here -->
 
+
+    <script type="text/javascript" src="js/work.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
 
   </body>

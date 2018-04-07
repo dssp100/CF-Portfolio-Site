@@ -76,4 +76,20 @@ $(document).ready(function(){
     });
 
 
+  // work section
+  for(var i = 0; i < title.length; ++i ) {
+  $("#work").append("\
+    <div class='col-sm-6 col-md-4 text-center'>\
+      <div class='thumbnail'>\
+        <img style='width: 100px; height: 100px' src='" + img[i] + "' alt='Sample Image'>\
+        <div class='caption'>\
+          <h3>" + title[i] + "</h3>\
+          <p>" + description[i] + "</p>\
+          <p><a href='"+ link[i] + "' class='btn btn-primary' role='button'>Show</a> <a href='#'></a></p>\
+        </div>\
+  ");
+};
+
+
+
 });
