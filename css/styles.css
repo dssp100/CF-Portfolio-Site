@@ -94,6 +94,13 @@ ul#skill-list {
   width: 50px;
   height: 50px;
 }
+#work h3 {
+  display: none;
+}
+
+#work p {
+  display: none
+}
 
 /* <!-- ****************************************************** --> */
 /* <!-- Contact Section --> */

@@ -77,15 +77,15 @@ $(document).ready(function(){
 
 
   // work section
-  for(var i = 0; i < title.length; ++i ) {
+  for(var i = 0; i < works.length; ++i ) {
   $("#work").append("\
     <div class='col-sm-6 col-md-4 text-center'>\
       <div class='thumbnail'>\
-        <img style='width: 100px; height: 100px' src='" + img[i] + "' alt='Sample Image'>\
+        <img style='width: 100px; height: 100px' src='" + works[i].img + "' alt='Sample Image'>\
         <div class='caption'>\
-          <h3>" + title[i] + "</h3>\
-          <p>" + description[i] + "</p>\
-          <p><a href='"+ link[i] + "' class='btn btn-primary' role='button'>Show</a> <a href='#'></a></p>\
+          <h3>" + works[i].title + "</h3>\
+          <p>" + works[i].description + "</p>\
+          <p><a href='"+ works[i].link + "' class='btn btn-primary' role='button'>Show</a> <a href='#'></a></p>\
         </div>\
   ");
     var images = $("#work img");
@@ -95,7 +95,11 @@ $(document).ready(function(){
     $(images[i]).css("border", "2px solid salmon");
   };
 };
-
-
+$(".thumbnail").mouseenter(function(){
+  $(".caption h3, .caption p", this).show();
+});
+$(".thumbnail").mouseleave(function(){
+  $(".caption h3, .caption p", this).hide();
+});
 
 });
