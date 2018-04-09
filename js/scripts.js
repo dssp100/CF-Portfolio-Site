@@ -16,6 +16,20 @@
     fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 
+//Google maps API
+function initMap() {
+  var uluru = {lat: 43.7340, lng: 7.4210};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 15,
+    center: uluru
+  });
+  var marker = new google.maps.Marker({
+    position: uluru,
+    map: map
+  });
+}
+
+
 // Waits until page is ready before launching
 $(document).ready(function(){
 

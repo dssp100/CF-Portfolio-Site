@@ -129,16 +129,16 @@ ul#skill-list {
 .contact_page_main,
 .faq_page_main {
   /* Start paralax styling */
-  background-image: url(../img/Mc.jpg);
   /*Add a background image*/
-  background-attachment: fixed;
+  background-image: url(../img/Mc.jpg);
   /*Give the background a fixed position does it not scroll when you scroll*/
-  background-size: cover;
+  background-attachment: fixed;
   /*Have the background cover the entire div section*/
-  color: rgba(248, 248, 248, 1.000);
+  background-size: cover;
   /*Change the color of the text on top so it is readable and adjust the padding as needed.*/
+  color: rgba(248, 248, 248, 1.000);
   padding:100px;
-  padding-top: 50px;
+  padding-top: 20px;
   /* End paralax styling */
 
   background-repeat: no-repeat;
@@ -172,8 +172,16 @@ ul#skill-list {
   padding-top: 20px;
   list-style-type: none;
   padding-left: 0px;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
+
+#map {
+  height: 200px;
+  width: 400px;
+  margin: 0px;
+  padding: 0px;
+}
+
 
 .form-container {
   margin-top: 30px;
@@ -244,7 +252,7 @@ button.btn.btn-primary.modal-button {
 /* For bigger screen sizes */
 @media (min-width: 768px) {
   .contact_page_container, ul {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 
   .contact_page_container, .social p {
@@ -264,6 +272,11 @@ button.btn.btn-primary.modal-button {
     background-position: 0% 80%;
     height: 600px;
   }
+
+  .contact_page_container{
+    padding-top: 10px;
+  }
+
 }
 
 /* <!-- ****************************************************** --> */
