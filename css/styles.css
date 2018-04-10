@@ -176,10 +176,15 @@ ul#skill-list {
 }
 
 #map {
-  height: 200px;
-  width: 400px;
-  margin: 0px;
-  padding: 0px;
+    height: 200px;
+    width: 400px;
+}
+@media (min-width: 500px) {
+  #map { margin: 0 auto; }
+}
+
+@media (min-width: 768px) {
+  #map { margin: 0 auto; }
 }
 
 

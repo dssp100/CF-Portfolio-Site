@@ -17,17 +17,49 @@
     }(document, 'script', 'facebook-jssdk'));
 
 //Google maps API
+
+//Simple Map
+
+// function initMap() {
+//   var uluru = {lat: 43.7340, lng: 7.4210};
+//   var map = new google.maps.Map(document.getElementById('map'), {
+//     zoom: 15,
+//     center: uluru
+//   });
+//   var marker = new google.maps.Marker({
+//     position: uluru,
+//     map: map
+//   });
+// }
+
+
 function initMap() {
-  var uluru = {lat: 43.7340, lng: 7.4210};
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 15,
-    center: uluru
-  });
-  var marker = new google.maps.Marker({
-    position: uluru,
-    map: map
-  });
-}
+        var myLatlng = {lat: 43.7340, lng: 7.4210};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: myLatlng
+        });
+
+        var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title: 'Click to zoom'
+        });
+
+        map.addListener('center_changed', function() {
+          // 5 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker.getPosition());
+          }, 5000);
+        });
+
+        marker.addListener('click', function() {
+          map.setZoom(8);
+          map.setCenter(marker.getPosition());
+        });
+      }
 
 
 // Waits until page is ready before launching
