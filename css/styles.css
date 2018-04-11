@@ -148,6 +148,7 @@ ul#skill-list {
   color: rgba(248, 248, 248, 1.000);
   font-size: 1.2em;
   text-align: center;
+  padding-top: 0px;
 }
 
 .phone-number a {
@@ -169,7 +170,7 @@ ul#skill-list {
 }
 
 .contact_page_container ul {
-  padding-top: 20px;
+  padding-top: 10px;
   list-style-type: none;
   padding-left: 0px;
   font-size: 1.2em;
@@ -178,6 +179,7 @@ ul#skill-list {
 #map {
     height: 200px;
     width: 400px;
+    margin-left: -115px;
 }
 @media (min-width: 500px) {
   #map { margin: 0 auto; }
