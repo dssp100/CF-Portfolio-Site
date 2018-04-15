@@ -17,33 +17,60 @@
     }(document, 'script', 'facebook-jssdk'));
 
 //Google maps API
-function initMap() {
-        var myLatlng = {lat: 43.7340, lng: 7.4210};
 
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 15,
-          center: myLatlng
-        });
+// function initMap() {
+//         var myLatlng = {lat: 43.7340, lng: 7.4210};
+//
+//         var map = new google.maps.Map(document.getElementById('map'), {
+//           zoom: 15,
+//           center: myLatlng
+//         });
+//
+//         var marker = new google.maps.Marker({
+//           position: myLatlng,
+//           map: map,
+//           title: 'Click to zoom'
+//         });
+//
+//         map.addListener('center_changed', function() {
+//           // 5 seconds after the center of the map has changed, pan back to the
+//           // marker.
+//           window.setTimeout(function() {
+//             map.panTo(marker.getPosition());
+//           }, 5000);
+//         });
+//
+//         marker.addListener('click', function() {
+//           map.setZoom(8);
+//           map.setCenter(marker.getPosition());
+//         });
+//       }
+var marker;
 
-        var marker = new google.maps.Marker({
-          position: myLatlng,
-          map: map,
-          title: 'Click to zoom'
-        });
+  function initMap() {
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 15,
+      center: {lat: 43.7340, lng: 7.4210}
+    });
 
-        map.addListener('center_changed', function() {
-          // 5 seconds after the center of the map has changed, pan back to the
-          // marker.
-          window.setTimeout(function() {
-            map.panTo(marker.getPosition());
-          }, 5000);
-        });
+    marker = new google.maps.Marker({
+      map: map,
+      draggable: true,
+      animation: google.maps.Animation.DROP,
+      position: {lat: 43.7340, lng: 7.4210}
+    });
+    marker.addListener('click', toggleBounce);
+  }
+  
+  function toggleBounce() {
+    if (marker.getAnimation() !== null) {
+      marker.setAnimation(null);
+    } else {
+      marker.setAnimation(google.maps.Animation.BOUNCE);
+    }
 
-        marker.addListener('click', function() {
-          map.setZoom(8);
-          map.setCenter(marker.getPosition());
-        });
-      }
+  }
+
 
 
 // Waits until page is ready before launching
