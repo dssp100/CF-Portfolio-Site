@@ -9,15 +9,15 @@ var works = [
 },
 {
   title: "Calculator",
-  img: "img/calc.jpg",
+  img: "img/calc.png",
   description: "CSS Grid based Calculator",
   link : "https://dssp100.github.io/cf_calculator/"
 },
 {
-  title: "Under Construction",
-  img: "img/underConstruction.png",
-  description: "I will add when the project has been completed",
-  link : "#"
+  title: "Todo List",
+  img: "todo.png",
+  description: "jQuery based Todo list",
+  link : "https://dssp100.github.io/cf_TodoList/"
 },
 {
   title: "Under Construction",
