@@ -15,7 +15,7 @@ var works = [
 },
 {
   title: "Todo List",
-  img: "todo.png",
+  img: "img/todo.png",
   description: "jQuery based Todo list",
   link : "https://dssp100.github.io/cf_TodoList/"
 },
