@@ -139,6 +139,11 @@ $(document).ready(function(){
         $('#visible-message').html($message);
         console.log("message is " + $message);
       }
+
+      if ($firstName !== "" || $lastName !== "" || $message !== "" ){
+      $('.form-container form button[type="submit"]').hide();
+
+      }
       return false;
     });
 
