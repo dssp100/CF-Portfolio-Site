@@ -61,7 +61,7 @@ var marker;
     });
     marker.addListener('click', toggleBounce);
   }
-  
+
   function toggleBounce() {
     if (marker.getAnimation() !== null) {
       marker.setAnimation(null);
@@ -96,27 +96,71 @@ $(document).ready(function(){
     });
 
     // Hides the message box when submit button is pressed.
+
     $('#form-button').on('click', function() {
-      var comment = $('#message').val();
+      var $firstName = $('#firstName').val();
+      var $lastName = $('#lastName').val();
+      var $email = $('#email').val();
+      var $message = $('#message').val();
 
 
-      if(comment === ""){
+      if($firstName === ""){
+        $('#firstName').css('border', 'solid 3px red');
+        console.log("firstName missing");
+      } else if($firstName !== ""){
+          $('#firstName').hide();
+          $('#visible-firstName').html($firstName);
+          console.log("first name is " + $firstName);
+      }
+
+      if ($lastName === ""){
+        $('#lastName').css('border', 'solid 3px red');
+        console.log("lastName missing");
+      } else if ($lastName !== ""){
+        $('#lastName').hide();
+        $('#visible-lastName').html($lastName);
+        console.log("last name is " + $lastName);
+      }
+
+      if ($email === ""){
+        $('#email').css('border', 'solid 3px red');
+        console.log("email missing");
+      } else if ($email !== ""){
+          $('#email').hide();
+          $('#visible-email').html($email);
+          console.log("email is " + $email);
+      }
+
+      if ($message === ""){
         $('#message').css('border', 'solid 3px red');
-      }else{
-        console.log(comment.toUpperCase()+ " : This was your msg") ;
-        $('#visible-comment').html(comment);
+        console.log("message missing");
+      } else if ($message !== ""){
         $('#message').hide();
-      };
+        $('#visible-message').html($message);
+        console.log("message is " + $message);
+      }
       return false;
     });
+
+    // function ValidateEmail(mail)
+    // {
+    //  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value))
+    //   {
+    //     return (true)
+    //   }
+    //     alert("You have entered an invalid email address!")
+    //     return (false)
+    // }
+    //
 
     // Changes the background color of the form fields
     $('#firstName, #lastName, #email, #message').css('background', 'rgba(219, 241, 251, 1.000)');
 
     // Alert msg on statup
-    $(function(){
-      alert("Welcome to my page");
-    });
+
+    // $(function(){
+    //   alert("Welcome to my page");
+    // });
 
     //Count the message box characters and display number
     $('#message').on('keyup', function(){

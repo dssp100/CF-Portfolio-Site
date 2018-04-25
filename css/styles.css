@@ -151,6 +151,11 @@ ul#skill-list {
   padding-top: 0px;
 }
 
+.visible-name {
+  font-size: 20px;
+  color: yellow;
+}
+
 .phone-number a {
   color: rgba(248, 248, 248, 1.000);
 }
