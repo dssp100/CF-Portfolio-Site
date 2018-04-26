@@ -109,41 +109,37 @@ $(document).ready(function(){
 
       if($firstName === ""){
         $('#firstName').css('border', 'solid 3px red');
-        console.log("firstName missing");
-      } else if($firstName !== ""){
-          $('#firstName').hide();
-          $('#visible-firstName').html($firstName);
-          console.log("first name is " + $firstName);
-      }
+        } else if($firstName !== ""){
+        $('#visible-firstName').html($firstName);
+        $('#firstName').css('border', 'none');
+      };
 
-      if ($lastName === ""){
+      if($lastName === ""){
         $('#lastName').css('border', 'solid 3px red');
-        console.log("lastName missing");
-      } else if ($lastName !== ""){
-        $('#lastName').hide();
+        } else if($lastName !== ""){
         $('#visible-lastName').html($lastName);
-        console.log("last name is " + $lastName);
-      }
+        $('#lastName').css('border', 'none');
+      };
 
       if ($email === ""){
         $('#email').css('border', 'solid 3px red');
-        console.log("email missing");
-      } else if ($email !== ""){
-          $('#email').hide();
-          $('#visible-email').html($email);
-          console.log("email is " + $email);
-      }
+        } else if ($email !== ""){
+        $('#visible-email').html($email);
+        $('#email').css('border', 'none');
+      };
 
       if ($message === ""){
         $('#message').css('border', 'solid 3px red');
-        console.log("message missing");
-      } else if ($message !== ""){
-        $('#message').hide();
+        } else if ($message !== ""){
         $('#visible-message').html($message);
-        console.log("message is " + $message);
-      }
+        $('#message').css('border', 'none');
+      };
 
       if ($firstName !== "" && $lastName !== "" && $message !== "" ){
+      $('#firstName').hide();
+      $('#lastName').hide();
+      $('#email').hide();
+      $('#message').hide();
       $('.form-container form button[type="submit"]').hide();
       $('#char-count').hide();
       $('#success-text').html("You have succesfully submitted your message!");
