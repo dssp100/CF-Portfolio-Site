@@ -71,10 +71,13 @@ var marker;
 
   }
 
-
-
 // Waits until page is ready before launching
 $(document).ready(function(){
+
+  //Alert msg on statup
+  $(function(){
+    alert("Welcome to my page");
+  });
 
   //Tool tip
     $(function () {
@@ -95,7 +98,7 @@ $(document).ready(function(){
     return false;
     });
 
-    // Hides the message box when submit button is pressed.
+    // checks Message boxes Hides the message boxes when submit button is pressed.
 
     $('#form-button').on('click', function() {
       var $firstName = $('#firstName').val();
@@ -140,41 +143,25 @@ $(document).ready(function(){
         console.log("message is " + $message);
       }
 
-      if ($firstName !== "" || $lastName !== "" || $message !== "" ){
+      if ($firstName !== "" && $lastName !== "" && $message !== "" ){
       $('.form-container form button[type="submit"]').hide();
-
+      $('#char-count').hide();
+      $('#success-text').html("You have succesfully submitted your message!");
       }
       return false;
     });
 
-    // function ValidateEmail(mail)
-    // {
-    //  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value))
-    //   {
-    //     return (true)
-    //   }
-    //     alert("You have entered an invalid email address!")
-    //     return (false)
-    // }
-    //
-
     // Changes the background color of the form fields
     $('#firstName, #lastName, #email, #message').css('background', 'rgba(219, 241, 251, 1.000)');
 
-    // Alert msg on statup
-
-    // $(function(){
-    //   alert("Welcome to my page");
-    // });
-
     //Count the message box characters and display number
     $('#message').on('keyup', function(){
-      console.log('keyup active');
+      var maxChar = 150
       var charCount = $('#message').val().length;
-      console.log(charCount);
-      $("#char-count").html(charCount);
+      var charLeft = maxChar - charCount
+      $("#char-count").html("You have " + charLeft + " characters left");
 
-      if(charCount > 50) {
+      if(charLeft < 10) {
         $('#char-count').css('color', 'red');
       } else {
         $('#char-count').css('color', 'white');
