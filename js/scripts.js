@@ -101,45 +101,46 @@ $(document).ready(function(){
     // checks Message boxes Hides the message boxes when submit button is pressed.
 
     $('#form-button').on('click', function() {
+      // Create a new variables
       var $firstName = $('#firstName').val();
       var $lastName = $('#lastName').val();
       var $email = $('#email').val();
       var $message = $('#message').val();
 
-
+      // User field validation
       if($firstName === ""){
         $('#firstName').css('border', 'solid 3px red');
         } else if($firstName !== ""){
-        $('#visible-firstName').html($firstName);
         $('#firstName').css('border', 'none');
       };
 
       if($lastName === ""){
         $('#lastName').css('border', 'solid 3px red');
         } else if($lastName !== ""){
-        $('#visible-lastName').html($lastName);
         $('#lastName').css('border', 'none');
       };
 
       if ($email === ""){
         $('#email').css('border', 'solid 3px red');
         } else if ($email !== ""){
-        $('#visible-email').html($email);
         $('#email').css('border', 'none');
       };
 
       if ($message === ""){
         $('#message').css('border', 'solid 3px red');
         } else if ($message !== ""){
-        $('#visible-message').html($message);
         $('#message').css('border', 'none');
       };
 
-      if ($firstName !== "" && $lastName !== "" && $message !== "" ){
+      if ($firstName !== "" && $lastName !== "" && $email !== "" && $message !== "" ){
       $('#firstName').hide();
+      $('#visible-firstName').html($firstName);
       $('#lastName').hide();
+      $('#visible-lastName').html($lastName);
       $('#email').hide();
+      $('#visible-email').html($email);
       $('#message').hide();
+      $('#visible-message').html($message);
       $('.form-container form button[type="submit"]').hide();
       $('#char-count').hide();
       $('#success-text').html("You have succesfully submitted your message!");
